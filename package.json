@@ -1,0 +1,19 @@
+{
+  "name": "my-site-generator",
+  "version": "1.0.0",
+  "description": "my static site generator using gael-boyenval.github.io as subtree",
+  "main": "n",
+  "scripts": {
+    "publish": "git subtree push --prefix public sitedeploy master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gael-boyenval/my-site-generator.git"
+  },
+  "author": "Gael BOYENVAL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gael-boyenval/my-site-generator/issues"
+  },
+  "homepage": "https://github.com/gael-boyenval/my-site-generator#readme"
+}
