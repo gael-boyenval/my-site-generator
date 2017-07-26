@@ -1,0 +1,115 @@
+{
+    "plugins": [
+        "stylelint-order"
+    ],
+    "rules": {
+        "color-hex-case": "lower",
+        "color-no-invalid-hex": true,
+
+        "font-weight-notation": "named-where-possible",
+
+        "indentation": 4,
+        "function-max-empty-lines": 2,
+        "function-comma-space-after": "always-single-line",
+        "function-parentheses-space-inside": "never-single-line",
+        "block-closing-brace-newline-after": [
+            "always-multi-line",
+            { "ignoreAtRules": ["if", "else"] }
+        ],
+        "number-leading-zero": "always",
+        "number-no-trailing-zeros": true,
+        "number-max-precision": 6,
+        "block-no-empty": true,
+        "comment-no-empty": true,
+        "declaration-bang-space-before": "always",
+        "declaration-block-no-duplicate-properties": [
+            true,
+            { "ignore": ["consecutive-duplicates"] }
+        ],
+        "string-quotes": "single",
+        "max-line-length": 100,
+        "max-empty-lines": 2,
+        "max-nesting-depth": [3,
+            { "ignoreAtRules": ["if", "else", "include"] }
+        ],
+        "order/order": [
+            "custom-properties",
+            "dollar-variables",
+            {
+                "type": "at-rule",
+                "name": "include",
+                "hasBlock": false
+            },
+            "declarations",
+            {
+                "type": "at-rule",
+                "name": "include",
+                "parameter": "screen",
+                "hasBlock": false
+            },
+            {
+                "type": "at-rule",
+                "name": "include",
+                "parameter": "^to-screen$",
+                "hasBlock": true
+            },{
+                "type": "at-rule",
+                "name": "include",
+                "parameter": "^from-screen$",
+                "hasBlock": true
+            },{
+                "type": "at-rule",
+                "name": "include",
+                "parameter": "^from-to-screen$",
+                "hasBlock": true
+            },{
+                "type": "at-rule",
+                "name": "include",
+                "parameter": "^at-screen$",
+                "hasBlock": true
+            },
+            "rules"
+        ],
+        "order/properties-order" : [
+            [
+                "box-sizing",
+                "display",
+                "float",
+                "flex",
+                "flex-flow",
+                "flex-basis",
+                "align-self",
+                "align-items",
+                "order",
+                "position",
+                "top",
+                "right",
+                "bottom",
+                "left",
+                "min-width",
+                "z-index",
+                "width",
+                "max-width",
+                "min-height",
+                "height",
+                "max-height",
+                "overflow",
+                "overflow-y",
+                "overflow-x",
+                "padding",
+                "padding-top",
+                "padding-right",
+                "padding-bottom",
+                "padding-left",
+                "margin",
+                "margin-top",
+                "margin-right",
+                "margin-bottom",
+                "margin-left"
+            ],
+            {
+                "unspecified": "bottom"
+            }
+        ]
+    }
+}
