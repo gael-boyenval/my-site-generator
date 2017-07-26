@@ -1,0 +1,53 @@
+.qa-cm-subscribe-banner {
+    @include content-margin();
+    @include border($side: top, $color: light);
+    padding: step(xl) 0;
+
+    &--short {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            @include to-screen(phone-m) {
+                flex: 0 0 100%;
+                margin-bottom: step(s);
+                text-align: center;
+            }
+
+            @include from-screen(phone-m) {
+                flex: 0 0 48%;
+            }
+        }
+    }
+
+    &--full {
+        text-align: center;
+
+        span {
+
+            @include to-screen(phone-m) {
+                display: block;
+                width: 100%;
+            }
+
+            @include from-screen(phone-m) {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__logo {
+        margin: 0 auto;
+    }
+
+    &__text {
+        @include font-size(l);
+
+        &--full {
+            @include font-family('serif');
+            margin: step(m) 0;
+        }
+    }
+}

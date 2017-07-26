@@ -1,0 +1,35 @@
+// -----------------------------------------------------
+// Description :
+// display a large section
+// with padding
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_text.scss
+// _settings_steps.scss
+// _settings_viewports.scss
+// -----------------------------------------------------
+
+.cm-slice {
+    @include content-margin;
+    display: flex;
+    padding-top: step(xl);
+    padding-bottom: step(xl);
+
+    &--centered {
+        justify-content: space-around;
+    }
+
+    &--top {
+        // used with transparent header
+        padding-top: 48px + step(s);
+
+        @include from-screen('tablet-s') {
+            padding-top: 58px + step(s);
+        }
+    }
+
+    &__content {
+        max-width: $max-width-content;
+    }
+}

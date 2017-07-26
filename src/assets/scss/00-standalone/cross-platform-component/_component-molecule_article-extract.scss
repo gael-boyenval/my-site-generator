@@ -1,0 +1,126 @@
+// -----------------------------------------------------
+// Description :
+// provide styles for elements (article, live...)
+// -----------------------------------------------------
+
+.cm-article {
+    max-width: 100%;
+
+    &__title {
+        @include font-family(serif);
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        padding: 1.4rem 1.4rem 1rem;
+        color: #fff;
+        line-height: 1.08;
+        font-weight: bold;
+
+        @include to-screen('phone-s') {
+            font-size: 2.1rem;
+        }
+
+        @include from-to-screen('phone-s', 'phone-m') {
+            font-size: 2.5rem;
+        }
+
+        @include from-screen('phone-m') {
+            font-size: 2.7rem;
+        }
+
+        @include from-screen('tablet-s') {
+            padding: 2.2rem 2.4rem;
+            font-size: 2.8rem;
+        }
+    }
+
+    &__ico-play {
+        display: inline-block;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: 0.5rem;
+        margin-bottom: -3px;
+
+        @include from-screen('phone-l') {
+            width: 2.3rem;
+            height: 2.3rem;
+        }
+    }
+
+    &__media-container {
+        position: relative;
+        max-height: 200px;
+        overflow: hidden;
+        background: linear-gradient(80deg, #190a52, #4b0840);
+    }
+
+    &__media {
+        display: block;
+        max-width: 100%;
+        opacity: 0.6;
+    }
+
+    &__marker {
+        position: absolute;
+        top: 1.6rem;
+        left: 1.4rem;
+        z-index: 2;
+
+        @include from-screen('tablet-s') {
+            left: 2.4rem;
+        }
+    }
+
+    //We need to cut the text if it's too long/height to fit in the component
+    //We use -webkit-line-clamp where supported
+    //and a pseudo element with grandient where not
+    &__content {
+        position: relative;
+        overflow: hidden;
+        padding: 1.4rem;
+        color: #464f57;
+
+        @include to-screen('phone-l') {
+            max-height: 116px;
+        }
+
+        @include from-to-screen('phone-l', 'tablet-s') {
+            max-height: 128px;
+        }
+
+        @include from-screen('tablet-s') {
+            max-height: 155px;
+            padding: 2.2rem 2.4rem;
+        }
+
+        &::after {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            height: 1.2em;
+            content: '';
+            background: linear-gradient(
+                to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%
+            );
+        }
+
+        @supports (-webkit-line-clamp: 2) {
+            display: -webkit-box;
+            flex-direction: column;
+            text-overflow: ellipsis;
+
+            @include to-screen('tablet-s') {
+                -webkit-line-clamp: 5;
+            }
+
+            @include from-screen('tablet-s') {
+                -webkit-line-clamp: 6;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

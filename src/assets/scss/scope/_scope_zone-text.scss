@@ -1,0 +1,94 @@
+.s-text-zone {
+    @include to-screen('phone-m') {
+        @include font-size(l);
+    }
+
+    @include from-screen('phone-m') {
+        @include font-size(xl);
+    }
+
+    ol,
+    ul {
+        @include to-screen('phone-l') {
+            margin-top: step(l) 0;
+            margin-bottom: step(l) 0;
+        }
+        @include from-screen('phone-l') {
+            margin-top: step(xl) 0;
+            margin-bottom: step(xl) 0;
+        }
+    }
+
+    p,
+    blockquote,
+    .cm-text-block {
+        margin-bottom: step(l);
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .cm-same-subject {
+        margin-bottom: step(l);
+    }
+
+    .ca-btn,
+    .cm-related__item,
+    .cm-same-subject__link {
+        text-decoration: none;
+    }
+
+    br {
+        display: block;
+        height: step(s);
+        content: '';
+    }
+
+    p:empty {
+        display: block;
+        height: step(l);
+        margin: 0;
+    }
+
+    p:last-child() {
+        margin-bottom: 0;
+    }
+
+
+    .cm-list {
+        margin-bottom: step(l);
+    }
+
+    .ca-heading-sub {
+        @include to-screen('phone-l') {
+            margin: step(l) 0 step(m);
+        }
+        @include from-screen('phone-l') {
+            margin: step(xl) 0 step(l);
+        }
+    }
+
+    .ca-standfirst {
+        @include font-size(m);
+
+        @include from-screen('phone-m') {
+            @include font-size(xl);
+        }
+    }
+
+    .cm-text-block {
+        &__title {
+            @include to-screen('phone-l') {
+                margin: 0 0 step(m);
+            }
+            @include from-screen('phone-l') {
+                margin: 0 0 step(l);
+            }
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+    }
+}

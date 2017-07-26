@@ -1,0 +1,44 @@
+// -----------------------------------------------------
+// Description :
+// provide variables and mixins for the component cross-platform
+// -----------------------------------------------------
+
+/*------------------------------------*\
+                atoms
+\*------------------------------------*/
+.s-cpc {
+    font-size: 1.5rem;
+    line-height: 1.35;
+
+    @include from-screen('phone-l') {
+        font-size: 1.7rem;
+    }
+
+    * {
+        line-height: inherit;
+    }
+}
+
+.ca-live-marker {
+    @include font-family(sans-serif);
+    display: inline-flex;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    background-color: #d40303;
+    font-size: 1.7rem;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fafbfc;
+}
+
+.u-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

@@ -1,0 +1,67 @@
+// -----------------------------------------------------
+// Description :
+// provide classes for user messages displayed contextualy
+// We add the class u-hidden at the end of the transition,
+// this way, screen readers won't read the content when users have closed the message
+// -----------------------------------------------------
+// Responsability :
+//
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_text.scss
+// _trumps_utilities.scss
+// trigger.js
+// -----------------------------------------------------
+
+.cm-user-message {
+    @include content-margin();
+    @include color(med);
+    @include border($color: light, $side: bottom);
+    display: flex;
+    align-items: flex-start;
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    // By default element is hidden when javascript is enabled
+    // .has-js is set very early on body
+    // Javascript disablers will always have the message
+    .has-js & {
+        display: none;
+    }
+
+    // Classes &--has-js and .is-open are added by the script handling the
+    // dismissed state, which is loaded asynchronously at page bottom
+    &--has-js:not(.u-hidden) {
+        display: flex;
+    }
+
+    &.is-open {
+        max-height: 50vh;
+        padding-top: step(m);
+        padding-bottom: step(m);
+        opacity: 1;
+    }
+
+    &__text {
+        @include font-size(xs);
+        @include line-height(s);
+        flex: 1;
+        margin-right: step(s);
+    }
+
+    &__close {
+        margin-top: 0.4rem;
+        cursor: pointer;
+
+        &:before {
+            width: 1.2rem;
+            height: 1.2rem;
+            opacity: 0.8;
+        }
+    }
+}

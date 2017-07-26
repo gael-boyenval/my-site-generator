@@ -1,0 +1,29 @@
+// -----------------------------------------------------
+// Description :
+// search card for the cross-platform component
+// -----------------------------------------------------
+
+.cm-search {
+    $almost-white: rgba(255, 255, 255, 0.9);
+    background-image: url('../imgs/medias/ccp/ccp_bg_map.svg');
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    background-size: 80% auto;
+
+    &__message {
+        @include font-family('sans-serif');
+        line-height: 1.1;
+
+        @include to-screen('phone-m') {
+            font-size: 2.8rem;
+        }
+
+        @include from-to-screen('phone-m', 'tablet-s') {
+            font-size: 3.6rem;
+        }
+
+        @include from-screen('tablet-s') {
+            font-size: 3.9rem;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@function getTint($set, $variant) {
+    $variantes: (
+        darker: 5,
+        dark: 4,
+        medium: 3,
+        light: 2,
+        lighter: 1,
+    );
+
+    $i: map-get($variantes, $variant);
+
+    $max-sat: map-get($set, 'max-sat');
+    $min-sat: map-get($set, 'min-sat');
+    $max-light: map-get($set, 'max-light');
+    $min-light: map-get($set, 'min-light');
+    $increments: length($variantes) - 1;
+
+    // caculate the diférentes between max and min value to get increment
+    // for saturation
+    $increment-sat: ($max-sat - $min-sat) / $increments;
+    // for  lightness
+    $increment-light: ($max-light - $min-light) / $increments;
+
+    @return hsl(
+        map-get($set, hue),
+        $min-sat + $increment-sat * ($i + 1),
+        $max-light - $increment-light * ($i - 1)
+    )
+}
+
+$ocean: (
+    hue: 220,
+    min-sat: 100%,
+    max-sat: 100%,
+    min-light: 10%,
+    max-light: 30%
+);
+
+$slate: (
+    hue: 220,
+    min-sat: 8%,
+    max-sat: 15%,
+    min-light: 20%,
+    max-light: 45%
+);
+
+$smoke: (
+    hue: 220,
+    min-sat: 8%,
+    max-sat: 10%,
+    min-light: 50%,
+    max-light: 85%
+);
+
+$snow: (
+    hue: 220,
+    min-sat: 15%,
+    max-sat: 15%,
+    min-light: 90%,
+    max-light: 99%
+);
+
+$gold: (
+    hue: 45,
+    min-sat: 95%,
+    max-sat: 98%,
+    min-light: 35%,
+    max-light: 80%
+);
+
+$red: (
+    hue: 0,
+    min-sat: 80%,
+    max-sat: 90%,
+    min-light: 40%,
+    max-light: 99%
+);
+
+$green: (
+    hue: 128,
+    min-sat: 20%,
+    max-sat: 83%,
+    min-light: 30%,
+    max-light: 90%
+);
+
+$evaluation-colors: (
+    true: #17c638,
+    false:  #f62120,
+    neutral: #f6a623
+);

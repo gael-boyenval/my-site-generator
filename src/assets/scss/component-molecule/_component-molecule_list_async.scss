@@ -1,0 +1,14 @@
+// -----------------------------------------------------
+// Description :
+// async load for list images
+// -----------------------------------------------------
+
+.cm-list {
+    &--check li::before {
+        @extend %ico-check-mark;
+    }
+
+    &--arrow li::before {
+        @extend %ico-arrow;
+    }
+}

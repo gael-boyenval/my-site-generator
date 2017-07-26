@@ -1,0 +1,131 @@
+// -----------------------------------------------------
+// Description :
+// provide styles to display text paterns in patternlab
+// [patternlab host]/?p=viewall-particules-text
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_text.scss
+// _settings_font-families.scss
+// -----------------------------------------------------
+@mixin color-code($color) {
+    content:'#{map-get($colors, $color)}';
+}
+
+.pl-text-size {
+    @each $key, $value in $font-sizes {
+        &-#{$key} {
+            @include font-size($key);
+            display: inline-block;
+        }
+    }
+}
+
+.pl-text-colors {
+    width: 160px;
+    padding: step(xl);
+    text-align: center;
+    font-weight: 900;
+
+    @each $key, $value in $colors {
+        &--#{$key} {
+            @include color($key);
+        }
+    }
+
+    &--darkbg {
+        @include background-color(dark);
+    }
+
+    &__big {
+        font-size: 40px;
+    }
+
+    &__small {
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    &__ref {
+        display: block;
+        margin-top: step(l);
+        font-weight: normal;
+    }
+
+    @each $key, $value in $colors {
+        &--#{$key} &__code {
+            font-weight: bold;
+            &::before {
+                @include color-code($key);
+                display: none;
+            }
+        }
+    }
+}
+
+
+.pl-text-family {
+    text-align: left;
+
+    @each $key, $value in $font-families {
+        &--#{$key} {
+            @include font-family($key);
+            @include color(std);
+            height: 100%;
+        }
+    }
+
+    &--italic {
+        font-style: italic;
+    }
+
+    &--medium {
+        font-weight: 500;
+    }
+
+    &--bold {
+        font-weight: bold;
+    }
+
+    &--extra-bold {
+        font-weight: 800;
+    }
+
+    &__id {
+        @include font-size(xs);
+        @include color(light);
+        @include font-family(std);
+        @include line-height(std);
+        display: block;
+        padding: 0 step(m) step(s);
+        margin: step(m) auto step(xs);
+        text-align: center;
+        border-bottom: 1px solid getTint($smoke, light);
+        letter-spacing: 0.05em;
+        font-weight: normal;
+    }
+
+    &__title {
+        @include font-size(xl);
+        @include line-height(s);
+    }
+
+    &__alpha {
+        @include font-size(l);
+        @include line-height(s);
+        padding: step(m);
+        margin-bottom: step(s);
+        text-align: center;
+        letter-spacing: step(xxs);
+        border-bottom: 1px solid getTint($smoke, light);
+    }
+
+    &__cap {
+        @include font-size(xxs);
+        text-transform: uppercase;
+    }
+
+    &__parag {
+        @include font-size(std);
+    }
+}

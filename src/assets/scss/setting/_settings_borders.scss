@@ -1,0 +1,59 @@
+// -----------------------------------------------------
+// Description :
+// provide variables and mixins for border styles
+// and border-radius.
+// -----------------------------------------------------
+// Responsabilities :
+// store and export alowed border declarations
+// divider-std : provide a mixin to
+// -----------------------------------------------------
+// Segregation :
+// do not store or export multiple declarations.
+// Only one couple of propertie/value
+// -----------------------------------------------------
+// Dependencies :
+// _settings_colors.scss,
+// -----------------------------------------------------
+
+/*------------------------------------*\
+            BORDERS
+\*------------------------------------*/
+
+$border-widths: (
+    xl: 5px,
+    l: 3px,
+    m: 2px,
+    std: 1px
+);
+
+$border-colors: (
+    dark: getTint($slate, medium),
+    medium: getTint($smoke, light),
+    light: getTint($snow, dark),
+    transparent: transparent,
+    interactive-light: getTint($smoke, light),
+    interactive-light--hover: getTint($smoke, lighter),
+    interactive-light--active: getTint($smoke, medium),
+    background: getTint($snow, lighter)
+);
+
+@mixin border($color: medium, $width: std, $side: '') {
+    $color: map-get($border-colors, $color);
+    $width: map-get($border-widths, $width);
+    $side: if($side == '', '', #{'-'}#{$side});
+
+    border#{$side}: solid $width $color;
+}
+
+/*------------------------------------*\
+            BORDER RADIUS
+\*------------------------------------*/
+
+$border-radius: (
+    std: 3px,
+    circle: 50%
+);
+
+@mixin border-radius($radius) {
+    border-radius: map-get($border-radius, $radius);
+};

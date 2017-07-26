@@ -1,0 +1,131 @@
+// -----------------------------------------------------
+// Description :
+// provide a grid system
+// -----------------------------------------------------
+// Responsability :
+// to create columns with same size in height
+// -----------------------------------------------------
+// Extension :
+// do not use shortcuts for flex values
+// to ensure ie11 support
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_step.scss
+// -----------------------------------------------------
+
+.ol-container {
+    @include container;
+
+    &--content-margin {
+        @include apply-to-screen(
+            ('from-screen', 'all'),
+            ('from-screen', 'tablet-s')
+        ) {
+            @include content-margin;
+        }
+    }
+}
+
+.ol-grid {
+    $gutter-width: step(m);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    position: relative;
+
+    > .ol-grid {
+        right: 0;
+        left: 0;
+
+        &.ol-grid__cell {
+            width: 100%;
+        }
+    }
+
+    &--gutter {
+        margin-right: - ($gutter-width / 2);
+        margin-left: - ($gutter-width / 2);
+    }
+
+    &--space-aroud {
+        @include apply-to-screen(
+            ('from-screen', 'all'),
+            ('from-screen', 'tablet-s')
+        ) {
+            justify-content: space-around;
+        }
+    }
+
+    &--gutter > &__cell {
+        padding-right: $gutter-width / 2;
+        padding-left: $gutter-width / 2;
+    }
+
+    // by default a ol-grid__cell keep his natural width
+    &__cell {
+
+        &--fill {
+            @include apply-to-screen(
+                ('from-screen', 'all'),
+                ('to-screen', 'phone-l')
+            ) {
+                // ie11 require units, the px is required
+                flex: 1 1 0px;
+            }
+        }
+
+        &--full {
+            @include apply-to-screen(
+                ('from-screen', 'all'),
+                ('to-screen', 'phone-l'),
+                ('to-screen', 'tablet-s'),
+                ('from-screen', 'tablet-s'),
+                ('from-screen', 'phone-l')
+            ) {
+                flex: 100%;
+            }
+        }
+
+        &--1of2 {
+            @include apply-to-screen(
+                ('from-screen', 'all'),
+                ('to-screen', 'tablet-s'),
+                ('from-screen', 'tablet-s'),
+                ('from-screen', 'phone-l')
+            ) {
+                flex: 0 0 50%;
+                max-width: 50%; // ie11
+            }
+        }
+
+        &--1of3 {
+            @include apply-to-screen(
+                ('from-screen', 'all'),
+                ('from-screen', 'tablet-s')
+            ) {
+                flex: 0 0 33.333%;
+                max-width: 33.333%; // ie11
+            }
+        }
+
+        &--2of3 {
+            @include apply-to-screen(
+                ('from-screen', 'phone-l')
+            ) {
+                flex: 0 0 66.666%;
+                max-width: 66.666%; // ie11
+            }
+        }
+
+        // ORDERING
+        &--first {
+            @include apply-to-screen(
+                ('from-screen', 'all'),
+                ('from-screen', 'phone-l')
+            ) {
+                order: -1;
+            }
+        }
+    }
+}

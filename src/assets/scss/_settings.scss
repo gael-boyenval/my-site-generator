@@ -1,0 +1,24 @@
+/* ------------------------------------ *\
+                SETTINGS
+\* ------------------------------------ */
+
+// Globally-available variables and config.
+@import 'setting/_settings_global';
+// varaibles and mixins for médias queries and responsive helpers
+@import 'setting/_settings_viewports';
+// colors sets.
+@import 'setting/_settings_colors';
+// imported font families.
+@import 'setting/_settings_font-families';
+// Colors / font sizes / familly.
+@import 'setting/_settings_text';
+// generate solid borders and border-radius declarations.
+@import 'setting/_settings_borders';
+// function that return alowed sapcing values.
+@import 'setting/_settings_step';
+// generate background colors declarations.
+@import 'setting/_settings_background-colors';
+// layout utils and mixins
+@import 'setting/_settings_layout';
+// icons mixins and functions.
+@import 'setting/_settings_icons';

@@ -1,0 +1,47 @@
+// -----------------------------------------------------
+// Description :
+// provide a molecule with a media image and a legend
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_text.scss
+// _settings_step.scss
+// -----------------------------------------------------
+
+.cm-figure {
+
+    &__media-container {
+        position: relative;
+    }
+
+    &__media {
+        width: 100%;
+        height: auto;
+    }
+
+    &__caption {
+        @include font-size(s);
+        @include line-height(s);
+        @include color(light);
+        @include font-family(std);
+
+        @include to-screen('tablet-s') {
+            padding: step(xs) $content-margin 0;
+        }
+
+        @include from-screen('tablet-s') {
+            @include font-size(std);
+            padding: step(xs) 0 0;
+        }
+    }
+
+    &__credit {
+        text-transform: uppercase;
+    }
+
+    &__ico {
+        position: absolute;
+        bottom: step(m);
+        left: step(m);
+    }
+}

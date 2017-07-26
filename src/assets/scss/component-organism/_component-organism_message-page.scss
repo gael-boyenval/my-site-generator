@@ -1,0 +1,30 @@
+// -----------------------------------------------------
+// Description :
+// styles for user information or interaction pages
+// -----------------------------------------------------
+// Dependencies :
+// _settings_step.scss
+// -----------------------------------------------------
+
+.co-message-page {
+
+    &__title {
+        @include font-family(std);
+        padding-bottom: step(m);
+        margin-bottom: step(m);
+        font-weight: bold;
+    }
+
+    &__content {
+        @include content-margin();
+        @include font-size(l);
+        @include line-height(std);
+        padding-top: step(l);
+    }
+
+    &__catchphrase {
+        @include font-family(std);
+        @include color(light);
+        margin-bottom: step(m);
+    }
+}

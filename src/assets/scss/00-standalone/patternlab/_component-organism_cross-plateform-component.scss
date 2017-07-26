@@ -1,0 +1,61 @@
+// cross platform component cards and bullets
+@import '../cross-platform-component/_settings_viewports';
+@import '../cross-platform-component/_settings';
+
+.co-slider__cards {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    overflow-x: scroll;
+    margin: 0;
+
+    @include to-screen('phone-m') {
+        padding: 0 map-get($layout-margin, s);
+    }
+
+    @include from-to-screen('phone-m', 'phone-l') {
+        padding: 0 map-get($layout-margin, m);
+    }
+
+    @include from-to-screen('phone-l', 'tablet-s') {
+        padding: 0 map-get($layout-margin, l);
+    }
+
+    @include from-screen('tablet-s') {
+        padding: 0 map-get($layout-margin, xl);
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.co-slider__card {
+
+    @include to-screen('phone-m') {
+        flex: 0 0 calc(100vw - #{map-get($layout-margin, s) * 2});
+        max-width: calc(100vw - #{map-get($layout-margin, s) * 2});
+        margin-right: 7px;
+    }
+
+    @include from-to-screen('phone-m', 'phone-l') {
+        flex: 0 0 420px;
+        width: 420px;
+        margin-right: 14px;
+    }
+
+    @include from-to-screen('phone-l', 'tablet-s') {
+        flex: 0 0 470px;
+        width: 470px;
+        margin-right: 14px;
+    }
+
+    @include from-screen('tablet-s') {
+        flex: 0 0 575px;
+        width: 575px;
+        margin-right: 14px;
+    }
+}

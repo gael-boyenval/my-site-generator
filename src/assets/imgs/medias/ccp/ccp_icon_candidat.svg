@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="24px" viewBox="0 0 26 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_candidat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="21" width="26" height="2"></rect>
+        <path d="M5,18 L5,14.5 C5,12.5670034 6.56327939,11 8.49149665,11 L17.5085033,11 C19.4368037,11 21,12.5709366 21,14.5 L21,18" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="XL-autour-de-l'election" transform="translate(-131.000000, -350.000000)">
+            <g id="carte-4" transform="translate(96.000000, 201.000000)">
+                <g id="content" transform="translate(24.000000, 70.000000)">
+                    <g id="PICTO" transform="translate(5.000000, 15.000000)">
+                        <g id="ic_candidat" transform="translate(6.000000, 65.000000)">
+                            <g id="Rectangle-3" opacity="0.396280317">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <rect stroke="#190A52" stroke-width="1" x="0.5" y="21.5" width="25" height="1"></rect>
+                            </g>
+                            <circle id="Oval-3" stroke="#190A52" stroke-width="2" opacity="0.8" cx="13" cy="4" r="4"></circle>
+                            <g id="Rectangle" opacity="0.8" stroke-linecap="round" stroke="#190A52">
+                                <use stroke-width="2" xlink:href="#path-2"></use>
+                                <use stroke-width="1" xlink:href="#path-2"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

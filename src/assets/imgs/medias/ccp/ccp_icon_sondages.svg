@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="23px" viewBox="0 0 26 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-sondage</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="XL-autour-de-l'election" transform="translate(-131.000000, -416.000000)" fill="#190A52">
+            <g id="carte-4" transform="translate(96.000000, 201.000000)">
+                <g id="content" transform="translate(24.000000, 70.000000)">
+                    <g id="PICTO" transform="translate(5.000000, 15.000000)">
+                        <g id="ic-sondage" transform="translate(6.000000, 130.000000)">
+                            <rect id="Rectangle-3" opacity="0.4" x="0" y="21" width="26" height="2"></rect>
+                            <path d="M20,18 L24,18 L24,4.90909091 L20,4.90909091 L20,18 Z M8,18 L12,18 L12,9.81818182 L8,9.81818182 L8,18 Z M2,17.8920044 L6,17.8920044 L6,13.0920044 L2,13.0920044 L2,17.8920044 Z M14,18 L18,18 L18,0 L14,0 L14,18 Z" id="graph" opacity="0.806961287"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

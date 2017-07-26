@@ -1,0 +1,75 @@
+// -----------------------------------------------------
+// Description :
+// CPC results map
+// -----------------------------------------------------
+.cm-results-map {
+
+    &__content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    &__map-container {
+        text-align: center;
+
+        @include to-screen('phone-s') {
+            flex: 0 0 100%;
+            max-height: 18rem;
+        }
+
+        @include from-to-screen('phone-s', 'phone-l') {
+            flex: 0 0 100%;
+            max-height: 22.5rem;
+        }
+
+        @include from-screen('phone-l') {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    &__map-image {
+
+        @include to-screen('phone-s') {
+            width: auto;
+            height: auto;
+            max-height: 18rem;
+        }
+
+        @include from-to-screen('phone-s', 'phone-l') {
+            width: auto;
+            height: auto;
+            max-height: 22.5rem;
+        }
+
+        @include from-screen('phone-l') {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__map-title {
+        @include font-family(sans-serif);
+        color: #1f0d67;
+        font-size: 2rem;
+        line-height: 1.1;
+
+        @include to-screen('phone-l') {
+            flex: 0 0 100%;
+            margin-bottom: 1rem;
+        }
+
+        @include from-to-screen('phone-l', 'tablet-s') {
+            font-size: 3.8rem;
+        }
+
+        @include from-screen('phone-l') {
+            flex: 0 0 50%;
+        }
+
+        @include from-screen('tablet-s') {
+            font-size: 3.9rem;
+        }
+    }
+}

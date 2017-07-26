@@ -1,0 +1,86 @@
+// -----------------------------------------------------
+// Description :
+// provide variables and mixins for text
+// -----------------------------------------------------
+// Responsabilities :
+// store and export alowed text declarations ( @import font-size(std) )
+// -----------------------------------------------------
+// Segregation :
+// do not store or export multiple declarations.
+// Only one couple of propertie/value
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss,
+// -----------------------------------------------------
+
+/*------------------------------------*\
+                FONT SIZE
+\*------------------------------------*/
+
+$font-sizes: (
+    t4: 3.2rem,
+    t3: 2.8rem,
+    t2: 2.4rem,
+    t1: 2.2rem,
+    xl: 1.8rem,
+    l: 1.6rem,
+    m: 1.5rem,
+    std: 1.4rem,
+    s: 1.3rem,
+    xs: 1.2rem,
+    xxs: 1.1rem,
+    xxxs: 0.9rem
+);
+
+@mixin font-size($size) {
+    font-size: map-get($font-sizes, $size);
+};
+
+/*------------------------------------*\
+                COLORS
+\*------------------------------------*/
+$colors: (
+    'std': getTint($slate, dark),
+    'med': getTint($slate, light),
+    'light': getTint($smoke, dark),
+    'lighter': getTint($smoke, light),
+    'lightest': getTint($snow, dark),
+    'alert': getTint($red, dark),
+    'alert-light': getTint($red, light),
+    'reverted': getTint($snow, lighter),
+    'link': getTint($ocean, medium),
+    'link-hover': getTint($ocean, lighter)
+);
+
+@mixin color($color) {
+    color: map-get($colors, $color);
+};
+
+/*------------------------------------*\
+            LINE-HEIGHT
+\*------------------------------------*/
+
+$line-heights: (
+    std: 1.5,
+    m: 1.35,
+    s: 1.25,
+    xs: 1.1
+);
+
+@mixin line-height($lh) {
+    line-height: map-get($line-heights, $lh);
+};
+
+/*------------------------------------*\
+            FONT-FAMILIES
+\*------------------------------------*/
+
+$font-families: (
+    'std': $font-family-std,
+    'serif': $font-family-serif,
+    'sans-serif': $font-family-sans-serif
+);
+
+@mixin font-family($ff) {
+    font-family: map-get($font-families, $ff);
+};

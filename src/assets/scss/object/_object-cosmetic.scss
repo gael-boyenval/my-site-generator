@@ -1,0 +1,31 @@
+// -----------------------------------------------------
+// Description :
+// cosmetic styles for font colors
+// -----------------------------------------------------
+// Responsability :
+// set classes for font colors
+// -----------------------------------------------------
+// Extension :
+// -----------------------------------------------------
+// Dependencies :
+// _settings_colors.scss
+// -----------------------------------------------------
+
+.oc-text-light {
+    @include color(lighter);
+}
+
+.oc-bg-light {
+    @include background-color(light);
+}
+
+.oc-border-light {
+    &--top {
+        @include border($color:light, $side:top);
+    }
+
+    &--vertical {
+        @include border($color:light, $side:top);
+        @include border($color:light, $side:bottom);
+    }
+}

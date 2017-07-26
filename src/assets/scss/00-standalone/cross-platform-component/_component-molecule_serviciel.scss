@@ -1,0 +1,53 @@
+// -----------------------------------------------------
+// Description :
+// serviciel card molecule for cross-platform-compoent
+// -----------------------------------------------------
+
+.cm-serviciel {
+
+    &__body {
+        align-self: flex-start;
+        padding-bottom: 25px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        width: 100%;
+        border-bottom: solid 1px #e4e6e9;
+        text-decoration: none;
+
+        @include to-screen('phone-s') {
+            font-size: 1.4rem;
+        }
+
+        @include to-screen('tablet-s') {
+            min-height: 5.5rem;
+        }
+
+        @include from-to-screen('phone-s', 'phone-l') {
+            font-size: 1.5rem;
+        }
+
+        @include from-screen('phone-l') {
+            font-size: 1.7rem;
+        }
+
+        @include from-screen('tablet-s') {
+            min-height: 5.5rem;
+        }
+
+        &--last {
+            border-bottom: none;
+        }
+    }
+
+    &__icon {
+        flex: 0 0 35px;
+        min-width: 35px;
+        margin-right: 10px;
+        line-height: 0;
+        text-align: center;
+    }
+}

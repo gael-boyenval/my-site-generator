@@ -1,0 +1,108 @@
+// -----------------------------------------------------
+// Description :
+// provide classes for headings
+// All headings are set to display block in case we don't use a block tag
+// -----------------------------------------------------
+// Responsability :
+// set font-family and font-size for each instance,
+// eventualy font-weight (only for system fonts)
+// and line-height.
+// -----------------------------------------------------
+// Segregation :
+// do not set colors => they should be contextualy setted
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_text.scss
+// _settings_font-families.scss
+// -----------------------------------------------------
+
+.ca-heading {
+
+    &-primary {
+        @include font-family('serif');
+        @include font-size(t2);
+        @include line-height(xs);
+        display: block;
+        font-weight: 800;
+
+        @include from-to-screen('phone-m', 'tablet-s') {
+            @include font-size(t3);
+        }
+
+        @include from-screen('tablet-s') {
+            @include font-size(t4);
+        }
+    }
+
+    &-xl {
+        @include font-family('serif');
+        @include line-height(s);
+        display: block;
+        font-weight: bold;
+
+        @include from-to-screen('phone-s', 'tablet-s') {
+            @include font-size(t1);
+        }
+
+        @include from-screen('tablet-s') {
+            @include font-size(t2);
+        }
+    }
+
+    &-l {
+        @include font-family('serif');
+        @include font-size(xl);
+        @include line-height(s);
+        display: block;
+        font-weight: bold;
+
+        @include from-to-screen('phone-m', 'tablet-s') {
+            @include font-size(t1);
+        }
+
+        @include from-screen('tablet-s') {
+            @include font-size(t2);
+        }
+    }
+
+    &-s {
+        @include font-family('serif');
+        @include line-height(s);
+        display: block;
+        font-weight: bold;
+
+        @include to-screen('tablet-s') {
+            @include font-size(l);
+        }
+
+        @include from-screen('tablet-s') {
+            @include font-size(xl);
+        }
+    }
+
+    &-sub {
+        @include font-family('std');
+        @include line-height(s);
+        display: block;
+        font-weight: bold;
+
+        @include to-screen('tablet-s') {
+            @include font-size(xl);
+        }
+
+        @include from-screen('tablet-s') {
+            @include font-size(t1);
+        }
+    }
+
+    &-secondary {
+        @include font-family('std');
+        @include font-size(xs);
+        @include line-height(s);
+        display: block;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,167 @@
+.qa-horizontal-nav {
+    max-width: 100%;
+    overflow: auto;
+    // hide the scrollbar
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: none;
+    text-align: center;
+    // simulate border bottom and merge it with items borders
+    // alow white overlay for open effect
+    box-shadow: 0 -#{map-get($border-widths, 'std')} 0 0 map-get($border-colors, 'lighter') inset;
+
+
+    &::-webkit-scrollbar {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    &__container {
+        //overflow: visible;
+        position: relative;
+        z-index: 15;
+        max-width: 100vw;
+    }
+
+    &__inner {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0 step(s);
+
+        @include to-screen('tablet-s') {
+            min-width: 100%;
+            width: fit-content;
+            white-space: nowrap;
+        }
+
+        @include from-screen('tablet-s') {
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        > li {
+            display: inline-block;
+        }
+    }
+
+    &__item {
+        @include color('light');
+        @include font-size('xxs');
+        @include border($side: 'bottom', $color: 'light');
+        display: inline-block;
+        padding: step(s);
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        // never break lines
+        word-break: keep-all;
+        white-space: nowrap;
+        letter-spacing: 0.05em;
+
+        &--expendable {
+            @include border($side: 'right', $color: transparent);
+            @include border($side: 'left', $color: transparent);
+
+            &:after {
+                @include ico-svg(10px, 10px);
+                margin-left: step(xxs);
+                content: '';
+                transform: rotate(0);
+                transition: transform 0.3s ease;
+            }
+
+            &.is-open {
+                @include border($side: 'right', $color: 'light');
+                @include border($side: 'bottom', $color: 'background');
+
+                @include from-screen('tablet-s') {
+                    @include border($side: 'left', $color: 'light');
+                }
+            }
+
+            &.is-open:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    // displayed at the right
+    // to signify user there scroll content
+    &__shadow-scroll {
+
+        @include to-screen('tablet-s') {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 1px;
+            width: 50px;
+            background: linear-gradient(
+                -90deg,
+                rgba(getTint($snow, 'lighter'), 1),
+                rgba(getTint($snow, 'lighter'), 0.3) 50%,
+                rgba(255, 255, 255, 0)
+            );
+        }
+
+        @include from-screen('tablet-s') {
+            display: none;
+        }
+    }
+
+    // submenu
+    &__sub {
+        @include background-color(lighter);
+        width: 100vw;
+        max-height: 0;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease, max-height 0.3s ease;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0);
+
+        &.is-visible,
+        &:target {
+            max-height: 800px;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__sub-container {
+        flex-flow: row wrap;
+        padding: step(s) step(l);
+        text-align: left;
+
+        @include to-screen('tablet-s') {
+            display: block;
+        }
+
+        @include from-screen('tablet-s') {
+            display: flex;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        > li {
+            padding: 0 step(xs);
+
+            @include from-screen('tablet-s') {
+                flex: 0 0 50%;
+            }
+        }
+    }
+
+    &__sub-item {
+        @include border($side: 'bottom', $color: 'light');
+        @include font-size(l);
+        display: block;
+        width: 100%;
+        padding: step(xs) 0;
+        text-decoration: none;
+    }
+
+    &__sub li:last-child &__sub-item {
+
+        @include to-screen('tablet-s') {
+            border: none;
+        }
+    }
+}

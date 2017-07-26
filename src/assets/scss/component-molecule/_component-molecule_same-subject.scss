@@ -1,0 +1,37 @@
+// -----------------------------------------------------
+// Description :
+// a link to point to an article with same subject
+// -----------------------------------------------------
+// Dependancies :
+// _settings.scss
+// -----------------------------------------------------
+
+.cm-same-subject {
+    @include border($side: left, $color: light, $width: xl);
+    @include font-family(std);
+    padding-left: step(s);
+
+    &__link {
+        @include color(link);
+        @include font-size(m);
+        @include line-height(m);
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            @include color(link-hover);
+        }
+    }
+
+    &__title {
+        @include font-size(xxs);
+        @include color(light);
+        display: block;
+        margin-bottom: step(xxs);
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+}

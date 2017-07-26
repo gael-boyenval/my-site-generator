@@ -1,0 +1,21 @@
+// -----------------------------------------------------
+// Description :
+// Icons mixins and functions
+// -----------------------------------------------------
+
+@mixin ico-svg($width, $height, $align: baseline) {
+    &::before {
+        width: $width;
+        height: $height;
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: $align;
+        content: '';
+    }
+}
+
+@mixin ico-async($ico-name, $tint: null) {
+    &::before {
+        background-image: svg('ico-#{$ico-name}', '[fill]: #{$tint}');
+    }
+}

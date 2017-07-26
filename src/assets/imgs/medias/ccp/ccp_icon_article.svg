@@ -1,0 +1,18 @@
+<svg width="22" height="26" viewBox="0 0 22 26" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    ic-article
+  </title>
+  <defs>
+    <rect id="a" width="22" height="26" rx="2"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g>
+      <use fill="#FAFBFC" xlink:href="#a"/>
+      <rect stroke="#473B75" stroke-width="1.5" x=".75" y=".75" width="20.5" height="24.5" rx="2"/>
+    </g>
+    <path fill="#473B75" d="M11 9h6v1h-6zM5 11h12v1H5zM5 13h12v1H5zM5 15h12v1H5zM5 17h12v1H5zM5 19h8v1H5z"/>
+    <text font-family="TheAntiquaB-W7Bold, TheAntiquaB" font-size="7" font-weight="bold" fill="#8E81BE">
+      <tspan x="5.254" y="10">A</tspan>
+    </text>
+  </g>
+</svg>

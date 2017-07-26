@@ -1,0 +1,47 @@
+// -----------------------------------------------------
+// Description :
+// provide styles to display UI background colors in patternlab
+// [patternlab host]/?p=viewall-particules-backgrounds-colors
+// -----------------------------------------------------
+// Dependencies :
+// _settings_background-colors.scss,
+// _settings_steps.scss
+// -----------------------------------------------------
+@mixin bg-code($color) {
+    content:'#{map-get($background-colors, $color)}';
+}
+
+.pl-bg {
+    &__swatch {
+        width: 100%;
+        height: 60px;
+        margin-bottom: step(s);
+    }
+
+    &__code {
+        display: block;
+        font-weight: bold;
+    }
+
+    &__id {
+        display: block;
+        margin-top: step(xs);
+        margin-bottom: step(l);
+    }
+
+    @each $key, $value in $background-colors {
+        &--#{$key} &__swatch {
+            @include background-color($key);
+        }
+    }
+
+
+    @each $key, $value in $background-colors {
+        &--#{$key} &__code {
+            &::before {
+                @include bg-code($key);
+                display: none;
+            }
+        }
+    }
+}

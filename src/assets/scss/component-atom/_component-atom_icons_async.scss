@@ -1,0 +1,113 @@
+// -----------------------------------------------------
+// Description :
+// provide all site icons
+// -----------------------------------------------------
+// Dependencies :
+// -----------------------------------------------------
+
+%ico-arrow {
+    @include ico-async(arrow);
+}
+
+%ico-cross {
+    @include ico-async(cross, #{getTint($slate, dark)});
+}
+
+%ico-burger {
+    @include ico-async(burger);
+}
+
+%ico-check-mark {
+    @include ico-async(check-mark);
+}
+
+%ico-check-mark-big {
+    @include ico-async(check-mark-big, #{getTint($green, darker)});
+}
+
+%ico-chevron {
+    @include ico-async(chevron);
+}
+
+%ico-key {
+    @include ico-async(key);
+}
+
+%ico-key-light {
+    @include ico-async(key, #{getTint($smoke, light)});
+}
+
+%ico-pilcrow {
+    @include ico-async(pilcrow);
+}
+
+%ico-portfolio {
+    @include ico-async(portfolio);
+}
+
+%ico-play {
+    @include ico-async(play);
+}
+
+%ico-premium-content {
+    @include ico-async(premium-content);
+}
+
+%ico-time {
+    @include ico-async(time);
+}
+
+.ca-ico {
+
+    &--arrow {
+        @extend %ico-arrow;
+    }
+
+    &--cross {
+        @extend %ico-cross;
+    }
+
+    &--burger {
+        @extend %ico-burger;
+    }
+
+    &--check-mark {
+        @extend %ico-check-mark;
+    }
+
+    &--check-mark-big {
+        @extend %ico-check-mark-big;
+    }
+
+    &--chevron {
+        @extend %ico-chevron;
+    }
+
+    &--key {
+        @extend %ico-key;
+    }
+
+    &--key-light {
+        @extend %ico-key-light;
+    }
+
+    &--pilcrow {
+        @extend %ico-pilcrow;
+    }
+
+    &--portfolio {
+        @extend %ico-portfolio;
+    }
+
+    &--play {
+        @extend %ico-play;
+    }
+
+    &--premium-content {
+        @extend %ico-premium-content;
+    }
+
+    &--time {
+        @extend %ico-time;
+    }
+}

@@ -1,0 +1,48 @@
+// -----------------------------------------------------
+// Description :
+// provide classes for different types of simple blocks
+// -----------------------------------------------------
+// Responsability :
+// provide styling for the block container like background, borders, padding...
+// -----------------------------------------------------
+// Segregation :
+// -----------------------------------------------------
+// Dependencies :
+// _settings_step.scss
+// _settings_text.scss
+// _settings_background-colors.scss
+// _settings_colors.scss
+
+// -----------------------------------------------------
+
+.cm-text-block {
+    @include font-size(xs);
+    padding: step(s);
+
+    &--dark {
+        @include background-color(dark);
+        @include color(lightest);
+    }
+
+    &--premium {
+        @include background-color(premium);
+    }
+
+    &--centered {
+        text-align: center;
+    }
+
+    &--light {
+        @include background-color(light);
+        font-size: inherit;
+    }
+
+    &__title {
+        @include to-screen('phone-l') {
+            margin: 0 0 step(m);
+        }
+        @include from-screen('phone-l') {
+            margin: 0 0 step(l);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// -----------------------------------------------------
+// Description :
+// Mixins and variables
+// -----------------------------------------------------
+
+/*------------------------------------*\
+            Margins Units
+\*------------------------------------*/
+
+$layout-margin: (
+    s: 17px,
+    m: 66px,
+    l: 80px,
+    xl: 100px
+);
+
+/*------------------------------------*\
+              FONTS
+\*------------------------------------*/
+
+$font-family-std: Helvetica Neue, Helvetica, Arial, 'FreeSans', sans-serif;
+$font-family-serif: theantiqua, georgia, 'Bitstream Charter', serif;
+$font-family-sans-serif: Fette, 'Arial Narrow', sans-serif;
+
+$font-families: (
+    'std': $font-family-std,
+    'serif': $font-family-serif,
+    'sans-serif': $font-family-sans-serif
+);
+
+@mixin font-family($ff) {
+    font-family: map-get($font-families, $ff);
+};

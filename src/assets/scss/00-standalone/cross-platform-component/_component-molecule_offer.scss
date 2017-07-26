@@ -1,0 +1,20 @@
+// -----------------------------------------------------
+// Description :
+// offer card molecule for cross-platform-component
+// -----------------------------------------------------
+
+.cm-offer {
+
+    &__body {
+        display: block;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+
+        @include from-screen('phone-m') {
+            padding-left: 30px;
+        }
+    }
+}

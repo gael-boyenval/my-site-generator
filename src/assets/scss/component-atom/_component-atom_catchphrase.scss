@@ -1,0 +1,53 @@
+// -----------------------------------------------------
+// Description :
+// Catchphrase in article
+// -----------------------------------------------------
+// Dependencies :
+// _settings.scss,
+// -----------------------------------------------------
+
+.ca-catchphrase {
+    @include font-family(sans-serif);
+    @include font-size(t1);
+    @include line-height(xs);
+    text-transform: uppercase;
+
+
+    &__underline {
+        &--true,
+        &--false,
+        &--neutral {
+            display: inline;
+            position: relative;
+            padding: 0 0.4rem;
+
+            background-position: 0 0.6em; // second value = underline top position
+            background-size: 100% 0.6em; // second value = underline height
+            background-repeat: repeat-x; // second value = underline height
+        }
+
+        &--true {
+            background-image: linear-gradient(
+                to right,
+                rgba(map-get($evaluation-colors, true), 0.3) 0%,
+                rgba(map-get($evaluation-colors, true), 0.3) 100%
+            );
+        }
+
+        &--false {
+            background-image: linear-gradient(
+                to right,
+                rgba(map-get($evaluation-colors, false), 0.3) 0%,
+                rgba(map-get($evaluation-colors, false), 0.3) 100%
+            );
+        }
+
+        &--neutral {
+            background-image: linear-gradient(
+                to right,
+                rgba(map-get($evaluation-colors, neutral), 0.3) 0%,
+                rgba(map-get($evaluation-colors, neutral), 0.3) 100%
+            );
+        }
+    }
+}

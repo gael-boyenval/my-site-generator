@@ -1,0 +1,106 @@
+// -----------------------------------------------------
+// Description :
+// provide classes for styled lists
+// -----------------------------------------------------
+// Responsability :
+// provide styling for lists (bulleted, ordered …)
+// -----------------------------------------------------
+// Segregation :
+// do not use for unstyled lists with no bullets and margins styles
+// do not set font-size or font styling
+// (this should be setted in a higher level component)
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_text.scss
+// -----------------------------------------------------
+
+.cm-list {
+    $left-indent: step(xl);
+    margin-left: $left-indent;
+
+    li {
+        &:not(:last-child) {
+            margin-bottom: step(xs);
+        }
+
+        &::before {
+            display: block;
+            float: left;
+            content: '';
+            background-repeat: no-repeat;
+        }
+    }
+
+    &--inline {
+        li {
+            display: inline;
+
+            &:not(:last-child)::after {
+                content: ' –';
+            }
+        }
+    }
+
+    &--check li::before {
+        $bullet-height: 12px;
+        min-width: 16px;
+        min-height: $bullet-height;
+        // center it in line-height
+        margin-top: calc((1em * 1.5 / 2) - (#{$bullet-height} / 2));
+        margin-left: - $left-indent;
+    }
+
+    &--arrow li::before {
+        $bullet-height: 13px;
+        min-width: 13px;
+        min-height: $bullet-height;
+        // center it in line-height
+        margin-top: calc((1em * 1.5 / 2) - (#{$bullet-height} / 2));
+        margin-left: - $left-indent;
+    }
+
+    &--bullet li::before {
+        $bullet-height: 6px;
+        @include border-radius(circle);
+        // we use a bg color corresponding to
+        // the font-color light, since this is used
+        // more as a character than as an icon background
+        min-width: $bullet-height;
+        min-height: $bullet-height;
+        // center it in line-height
+        margin-top: calc((1em * 1.5 / 2) - (#{$bullet-height} / 2));
+        margin-left: - ($left-indent - $bullet-height / 2);
+        background-color: getTint($smoke, dark);
+    }
+
+    &--ordered {
+        // required use of <ol> tag
+        // keep for documentation purpose
+    }
+}
+
+
+.cm-list-bordered {
+    &__item {
+        @include border($side: bottom, $width: std, $color: light);
+
+        @include to-screen('tablet-s') {
+            @include content-margin;
+            padding-top: step(m);
+            padding-bottom: step(m);
+        }
+
+        @include from-screen('tablet-s') {
+            padding-top: step(l);
+            padding-bottom: step(l);
+        }
+
+        &--in-block {
+            @include from-screen('tablet-s') {
+                padding-right: step(l);
+                padding-left: step(l);
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// -----------------------------------------------------
+// Description :
+// round avatar
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss,
+// _settings_borders.scss
+// -----------------------------------------------------
+
+.ca-avatar {
+    @include border-radius('circle');
+    @include background-color('light');
+    overflow: hidden;
+}

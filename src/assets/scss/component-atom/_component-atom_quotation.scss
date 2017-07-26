@@ -1,0 +1,25 @@
+// -----------------------------------------------------
+// Description :
+// for quotation blocks
+// -----------------------------------------------------
+// Responsability :
+// set the box styling and sizes
+// -----------------------------------------------------
+// segregation :
+// - do not use for inline quotation, only for blocks
+// - do not set font-familly, let the responsability
+//   for a higher level component
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss,
+// _settings_text.scss,
+// _settings_borders.scss,
+// _settings_steps.scss,
+// _tools_text.scss,
+// -----------------------------------------------------
+
+.ca-quotation {
+    // inherit the font-size of the context
+    @include border($side: left, $width: 3px, $color: light);
+    padding: step(xxs) 0 step(xxs) step(s);
+}

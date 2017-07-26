@@ -1,0 +1,33 @@
+// -----------------------------------------------------
+// Description :
+// provide pub position
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_step.scss
+// _settings_text.scss
+// _settings_font-families.scss
+// _settings_background-color.scss
+// _settings_borders.scss
+// ----------------------------------------------------
+
+.cm-ad-position {
+    &__info {
+        @include color(light);
+        @include font-size(xxs);
+        @include font-family(std);
+        display: block;
+        margin-bottom: step(xs);
+        text-transform: uppercase;
+
+        @include from-screen('tablet-s') {
+            text-align: center;
+        }
+    }
+
+    &__container {
+        width: 300px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}

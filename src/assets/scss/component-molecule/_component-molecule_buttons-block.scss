@@ -1,0 +1,21 @@
+// -----------------------------------------------------
+// Description :
+// blocks containing buttons or button and link
+// -----------------------------------------------------
+// Responsability :
+// - space and position the elements
+// -----------------------------------------------------
+// Segregation :
+// -----------------------------------------------------
+// Dependencies :
+// _settings_step.scss
+// -----------------------------------------------------
+
+.cm-buttons-group {
+    padding: step(l) 0;
+    text-align: center;
+
+    &__button {
+        margin-bottom: step(s);
+    }
+}

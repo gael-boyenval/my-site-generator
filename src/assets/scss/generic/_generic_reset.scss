@@ -1,0 +1,87 @@
+// -----------------------------------------------------
+// Description :
+// Set default display for tag elements
+// ----------------------------------------------------
+
+/**
+* Avoid undesired inheritance on border-box box sizing.
+* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+/**
+* Removing margin and padding from these elements.
+*/
+body,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+fieldset,
+legend,
+figure,
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+/**
+* Force headings to inherit the same size as the surrounding text by default
+*/
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/**
+* Prevent Superscripts and Subscripts from Affecting Line-Height
+*/
+sup, sub {
+    position: relative;
+    top: -0.4em;
+    vertical-align: baseline;
+}
+
+sub {
+    top: 0.4em;
+}
+
+/**
+* Remove default table spacing.
+*/
+table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: top;
+}
+
+/* 'x' appears on right of search input when text is entered. This removes it */
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+    display: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    border-radius: 0;
+}

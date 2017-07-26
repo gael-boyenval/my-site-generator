@@ -1,0 +1,19 @@
+// -----------------------------------------------------
+// Description :
+// site footer
+// -----------------------------------------------------
+// Dependencies :
+// _settings_text.scss
+// _settings_step.scss
+// -----------------------------------------------------
+
+.co-footer {
+    @include content-margin();
+    @include font-size(xxs);
+    padding-top: step(s);
+    padding-bottom: step(m);
+
+    @include from-screen('tablet-s') {
+        text-align: center;
+    }
+}

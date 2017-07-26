@@ -1,0 +1,46 @@
+// -----------------------------------------------------
+// Description :
+// generate utility classes for margins and paddings
+// following steps variables.
+// -----------------------------------------------------
+// Dependencies :
+// _settings_step.scss,
+// -----------------------------------------------------
+
+@mixin add-space-util($prop, $direction, $size, $apply-to-screen-props...) {
+    @if length($apply-to-screen-props) < 1 {
+        .u-#{$prop}-#{$direction}-#{$size} {
+            #{$prop}-#{$direction} : step($size) !important;
+        }
+    } @else {
+        .u-#{$prop}-#{$direction}-#{$size} {
+            @include apply-to-screen($apply-to-screen-props...) {
+                #{$prop}-#{$direction} : step($size) !important;
+            }
+        }
+    }
+}
+
+/*---------------------------*\
+    margin bottom utilities
+\*---------------------------*/
+// will generate u-margin-bottom-m
+// if apply-to-screen mixins params are provided
+// it will generate something like :
+// .u-margin-bottom-m & .u-margin-bottom-m@from-phone-l
+
+@include add-space-util('margin', 'bottom', 's');
+@include add-space-util('margin', 'bottom', 'm');
+@include add-space-util('margin', 'bottom', 'l');
+@include add-space-util(
+    'margin',
+    'bottom',
+    'xl',
+    ('from-screen', 'all'),
+    ('from-screen', 'phone-l')
+);
+@include add-space-util('margin', 'top', 'xs');
+@include add-space-util('margin', 'top', 'm');
+@include add-space-util('margin', 'top', 'xl');
+@include add-space-util('margin', 'bottom', 'xxl');
+@include add-space-util('margin', 'left', 'm');

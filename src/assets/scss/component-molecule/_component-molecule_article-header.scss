@@ -1,0 +1,103 @@
+// -----------------------------------------------------
+// Description :
+// blocks containing headers of articles
+// -----------------------------------------------------
+// Dependencies :
+// _settings_global.scss
+// _settings_global.scss
+// -----------------------------------------------------
+
+.cm-article-header {
+    @include border($side: bottom, $color: light);
+    @include font-size(s);
+    padding: step(m) 0 step(s);
+
+    &__pub-date {
+        @include color(light);
+
+        .cm-article-header--opinion & {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__headline {
+        margin: step(m) 0;
+
+        .cm-article-header--opinion & {
+            text-align: center;
+        }
+    }
+
+    &__nature {
+        @include color(light);
+        display: block;
+        margin-bottom: step(s);
+
+        .cm-article-header--opinion & {
+            text-align: center;
+        }
+    }
+
+    &__author {
+        @include font-size(s);
+        @include color(light);
+    }
+
+    &__standfirst {
+        @include line-height(std);
+        @include font-size(l);
+        @include font-family(std);
+        padding-bottom: step(m);
+
+        @include from-screen('phone-m') {
+            @include font-size(xl);
+        }
+    }
+
+    &__reading-time {
+        @include font-size(s);
+        @include color(light);
+        margin-top: step(xs);
+    }
+
+    // contain picture, name and role
+    // is used for opinion articles
+    &__author-block {
+        max-width: 220px;
+        margin: 0 auto step(m) auto;
+        text-align: center;
+    }
+
+    &__author-name {
+        @include font-size(xs);
+        @include color(std);
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+
+    &__author-picture {
+        @include border-radius(circle);
+        @include background-color(light);
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+
+        @include from-screen('phone-l') {
+            order: 0;
+        }
+    }
+
+    &__premium-icon {
+        margin-right: step(xs);
+        margin-bottom: -4px;
+    }
+
+    &__premium-mention {
+        @include color(lighter);
+        @include font-size(s);
+        padding-top: step(m);
+        font-weight: 500;
+    }
+}

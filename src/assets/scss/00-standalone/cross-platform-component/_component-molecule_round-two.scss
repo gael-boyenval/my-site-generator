@@ -1,0 +1,176 @@
+// -----------------------------------------------------
+// Description :
+// Second round results styles
+// -----------------------------------------------------
+
+.cm-round-two {
+
+    &__content {
+        display: flex;
+        align-items: flex-end;
+        max-width: 100%;
+        justify-content: center;
+
+        @include to-screen('phone-s') {
+            max-width: 60%;
+            height: 23rem;
+            margin-left: 20%;
+        }
+
+        @include from-to-screen('phone-s', 'tablet-s') {
+            height: 26rem;
+        }
+
+        @include from-screen('tablet-s') {
+            height: 27rem;
+        }
+    }
+
+    &__candidate {
+        flex: 0 0 130px;
+        position: relative;
+        width: 130px;
+        max-width: 50%;
+        overflow: hidden;
+        text-align: center;
+
+        &:first-child {
+            margin-right: 2px;
+        }
+
+        .cm-round-two__podium {
+            animation: scoreBar 1s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        .cm-round-two__score {
+            opacity: 0;
+            animation: score 0.8s ease-in-out 0.3s;
+            animation-fill-mode: forwards;
+        }
+
+        .cm-round-two__elected-mark {
+            right: -55px;
+            animation: elected 0.5s cubic-bezier(0.55, 0.06, 0.61, 1.36) 0.7s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    &__podium {
+        position: relative;
+        max-height: 5.5rem;
+        // fix an artefact when animating
+        margin-top: -1px;
+        background-color: #190a52;
+        color: #fff;
+    }
+
+    &__media {
+        display: block;
+
+        @include to-screen('phone-m') {
+            margin-bottom: -5px;
+        }
+    }
+
+    &__candidate-name {
+        @include font-family('sans-serif');
+        width: 100%;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        color: #190a52;
+        line-height: 0.9;
+        background-color: #f5f5f5;
+    }
+
+    &__elected-mark {
+        @include font-family(sans-serif);
+        position: absolute;
+        top: -1rem;
+        right: -0.5rem;
+        width: 4.5rem;
+        height: 2.2rem;
+        background: #f00;
+        color: #fff;
+        font-size: 2rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+
+        @include to-screen('phone-m') {
+            width: 3.3rem;
+            height: 2rem;
+            font-size: 1.6rem;
+            line-height: 1.4;
+        }
+
+        &::before {
+            position: absolute;
+            left: -1.1rem;
+            width: 0;
+            height: 0;
+            content: '';
+            border-top: 1.1rem solid transparent;
+            border-bottom: 1.1rem solid transparent;
+            border-right: 1.1rem solid #f00;
+
+            @include to-screen('phone-m') {
+                left: -1rem;
+                border-top: 1rem solid transparent;
+                border-bottom: 1rem solid transparent;
+                border-right: 1rem solid #f00;
+            }
+
+        }
+    }
+
+    &__score-bar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    &__score {
+        @include font-family(sans-serif);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 38px;
+        overflow: visible;
+        margin-top: -19px;
+        font-size: 3rem;
+    }
+
+    @keyframes score {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.05;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes elected {
+        0% {
+            right: -5.5rem;
+        }
+        100% {
+            right: -0.2rem;
+        }
+    }
+
+    @keyframes scoreBar {
+        0% {
+            max-height: 0;
+        }
+
+        100% {
+            max-height: 15rem;
+        }
+    }
+}
