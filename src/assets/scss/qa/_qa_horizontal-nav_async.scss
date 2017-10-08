@@ -1,9 +1,0 @@
-.qa-horizontal-nav {
-    &__item {
-        &--expendable {
-            &:after {
-                @extend %ico-chevron;
-            }
-        }
-    }
-}
