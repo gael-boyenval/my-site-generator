@@ -1,13 +1,57 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/gaelboyenval/web/perso/my-site-generator/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/gaelboyenval/web/perso/my-site-generator/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "4b3fd131d8d2199410b67c51ecba5da9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9a5a487033c597180d5b4d3bd0ead3fe",
+        "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
@@ -19,6 +63,11 @@
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/component-page-creator",
       "packageJson": {
         "name": "component-page-creator",
@@ -40,7 +89,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "94f13a32bfdf07efba214ec663f350ad",
+        "contentDigest": "f4c1b818f076f0f05111d4e25885f988",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -53,6 +102,11 @@
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
       "packageJson": {
         "name": "component-layout-creator",
@@ -74,7 +128,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "79b01353520112e7b738b168c9e517c2",
+        "contentDigest": "2e8e49605f5feb77a0088edf6162b4c3",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -87,6 +141,12 @@
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
       "packageJson": {
         "name": "internal-data-bridge",
@@ -104,37 +164,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "8fa1a4741710f549352251bee2e649c4",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin dev-404-page": {
-      "resolve": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/dev-404-page",
-      "id": "Plugin dev-404-page",
-      "name": "dev-404-page",
-      "version": "1.0.0",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/dev-404-page",
-      "packageJson": {
-        "name": "dev-404-page",
-        "description": "Internal plugin to add a 404 page in development with helpful information",
-        "version": "1.0.0",
-        "main": "index.js",
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-        "license": "MIT",
-        "dependencies": [],
-        "devDependencies": [],
-        "peerDependencies": [],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "4693ba70f27f990aeda66882c320bd8f",
+        "contentDigest": "8b7f0177f6a7cbd832a57d821c2dae43",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -147,6 +177,11 @@
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/prod-404",
       "packageJson": {
         "name": "prod-404",
@@ -164,7 +199,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d26b00ec104bb539d685e00fd956965f",
+        "contentDigest": "a2625122845e7f52d1fa4264fb86b135",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -177,6 +212,12 @@
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby/dist/internal-plugins/query-runner",
       "packageJson": {
         "name": "query-runner",
@@ -194,7 +235,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "2bc33790719a531720ee025283bd9ea6",
+        "contentDigest": "f17008eb24850de66b5779ce404931b5",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -203,15 +244,24 @@
       "resolve": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-plugin-typography",
       "id": "Plugin gatsby-plugin-typography",
       "name": "gatsby-plugin-typography",
-      "version": "1.7.9",
+      "version": "1.7.18",
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [
+        "onClientEntry"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-plugin-typography",
       "packageJson": {
         "name": "gatsby-plugin-typography",
         "description": "Gatsby plugin to setup server rendering of Typography.js' CSS",
-        "version": "1.7.9",
+        "version": "1.7.18",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -219,10 +269,7 @@
           "typography",
           "typography.js"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -244,14 +291,19 @@
             "version": "^5.0.5"
           }
         ],
-        "peerDependencies": [],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
         "optionalDependecies": [],
         "bundledDependecies": []
       },
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "961c76ea3a043f1e467b4772e0e85c77",
+        "contentDigest": "a1051b80002c8a0900f9faa4f42f85f1",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -260,34 +312,34 @@
       "resolve": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-plugin-styled-components",
       "id": "Plugin gatsby-plugin-styled-components",
       "name": "gatsby-plugin-styled-components",
-      "version": "1.0.5",
+      "version": "2.0.11",
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "modifyBabelrc"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "replaceRenderer"
+      ],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-plugin-styled-components",
       "packageJson": {
         "name": "gatsby-plugin-styled-components",
         "description": "Gatsby plugin to add support for styled components",
-        "version": "1.0.5",
+        "version": "2.0.11",
         "main": "index.js",
         "keywords": [
           "gatsby",
           "gatsby-plugin",
           "styled-components"
         ],
-        "author": {
-          "name": "Guten Ye",
-          "email": "ywzhaifei@gmail.com"
-        },
+        "author": "Guten Ye <ywzhaifei@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
             "name": "babel-runtime",
             "version": "^6.26.0"
-          },
-          {
-            "name": "styled-components",
-            "version": "^2.0.0"
           }
         ],
         "devDependencies": [
@@ -296,14 +348,27 @@
             "version": "^6.26.0"
           }
         ],
-        "peerDependencies": [],
+        "peerDependencies": [
+          {
+            "name": "babel-plugin-styled-components",
+            "version": ">1.5.0"
+          },
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "styled-components",
+            "version": ">= 2.0.0"
+          }
+        ],
         "optionalDependecies": [],
         "bundledDependecies": []
       },
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3b3a7c8f46d7032e46bbe572dbcf1e47",
+        "contentDigest": "b3e8f5b5cb1c67595af20b7c12034cb6",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -312,25 +377,28 @@
       "resolve": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-transformer-remark",
       "id": "Plugin gatsby-transformer-remark",
       "name": "gatsby-transformer-remark",
-      "version": "1.7.7",
+      "version": "1.7.39",
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-transformer-remark",
       "packageJson": {
         "name": "gatsby-transformer-remark",
         "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
-        "version": "1.7.7",
+        "version": "1.7.39",
         "keywords": [
           "gatsby",
           "gatsby-plugin",
           "markdown",
           "remark"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -342,8 +410,16 @@
             "version": "^3.5.0"
           },
           {
+            "name": "graphql-type-json",
+            "version": "^0.1.4"
+          },
+          {
             "name": "gray-matter",
-            "version": "^2.1.0"
+            "version": "^3.0.0"
+          },
+          {
+            "name": "hast-util-raw",
+            "version": "^2.0.2"
           },
           {
             "name": "hast-util-to-html",
@@ -366,12 +442,36 @@
             "version": "^7.0.1"
           },
           {
+            "name": "remark-parse",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0"
+          },
+          {
             "name": "sanitize-html",
             "version": "^1.14.1"
           },
           {
             "name": "underscore.string",
             "version": "^3.3.4"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5"
+          },
+          {
+            "name": "unist-util-remove-position",
+            "version": "^1.1.1"
           },
           {
             "name": "unist-util-select",
@@ -403,7 +503,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "9173539935904bdf37503ed77366b99b",
+        "contentDigest": "6b87ad6b85ef471f62293ae90cf1b66d",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -412,25 +512,28 @@
       "resolve": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-source-filesystem",
       "id": "Plugin gatsby-source-filesystem",
       "name": "gatsby-source-filesystem",
-      "version": "1.4.12",
+      "version": "1.5.27",
       "pluginOptions": {
         "plugins": [],
         "name": "src",
         "path": "/Users/gaelboyenval/web/perso/my-site-generator/src/"
       },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator/node_modules/gatsby-source-filesystem",
       "packageJson": {
         "name": "gatsby-source-filesystem",
         "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
-        "version": "1.4.12",
+        "version": "1.5.27",
         "keywords": [
           "gatsby",
           "gatsby-plugin"
         ],
-        "author": {
-          "name": "Kyle Mathews",
-          "email": "mathews.kyle@gmail.com"
-        },
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
@@ -472,6 +575,10 @@
           {
             "name": "slash",
             "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
           }
         ],
         "devDependencies": [
@@ -487,7 +594,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "16a3d1d6ca0bdfeb544ff5ac9b3473a3",
+        "contentDigest": "efc7604d97cd65df67a0e2a1b8fd8aef",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -496,10 +603,16 @@
       "resolve": "/Users/gaelboyenval/web/perso/my-site-generator",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "6756110c2636cc0e3a0965c2e2f455aa",
+      "version": "7e7c71574ea614b21c81ebf0eb3ebfec",
       "pluginOptions": {
         "plugins": []
       },
+      "nodeAPIs": [
+        "onCreateNode",
+        "createPages"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
       "pluginFilepath": "/Users/gaelboyenval/web/perso/my-site-generator",
       "packageJson": {
         "name": "my-site-generator",
@@ -509,30 +622,51 @@
         "dependencies": [
           {
             "name": "gatsby",
-            "version": "^1.8.11"
+            "version": "latest"
           },
           {
             "name": "gatsby-link",
-            "version": "^1.4.1"
+            "version": "latest"
           },
           {
             "name": "gatsby-plugin-styled-components",
-            "version": "^1.0.5"
+            "version": "latest"
           },
           {
             "name": "gatsby-plugin-typography",
-            "version": "^1.7.9"
+            "version": "latest"
           },
           {
             "name": "gatsby-source-filesystem",
-            "version": "^1.4.12"
+            "version": "latest"
           },
           {
             "name": "gatsby-transformer-remark",
-            "version": "^1.7.7"
+            "version": "latest"
+          },
+          {
+            "name": "styled-components",
+            "version": "latest"
           }
         ],
-        "devDependencies": [],
+        "devDependencies": [
+          {
+            "name": "babel-eslint",
+            "version": "latest"
+          },
+          {
+            "name": "eslint",
+            "version": "latest"
+          },
+          {
+            "name": "eslint-config-airbnb-base",
+            "version": "^12.1.0"
+          },
+          {
+            "name": "eslint-plugin-import",
+            "version": "^2.10.0"
+          }
+        ],
         "peerDependencies": [],
         "optionalDependecies": [],
         "bundledDependecies": []
@@ -540,65 +674,284 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "e24f8c3bc10c07b739536afd8f294f58",
+        "contentDigest": "db3297754d800df73d903d3718e60d61",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Site": {
       "siteMetadata": {
-        "title": "Pandas eats a lot !"
+        "title": "Gaël BOYENVAL"
       },
-      "pathPrefix": "",
-      "polyfill": true,
-      "buildTime": "2017-10-08T14:32:06.253Z",
+      "port": "8000",
+      "host": "localhost",
+      "buildTime": "2018-03-31T17:12:30.308Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "39e173547a8f2f5271e012916e3d9a3b",
+        "contentDigest": "1c61ae95454e345f7ad9d03efccf5022",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
     },
-    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js absPath of file": {
-      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js absPath of file",
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/ absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/ absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6dbeab22ee737d3ccbf678c3b8e36b50",
-        "mediaType": "application/javascript",
-        "type": "File",
+        "contentDigest": "5935413d256c6be1c338377de8c60c06",
+        "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "src",
-      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js",
-      "relativePath": "pages/index.js",
-      "extension": "js",
-      "size": 1652,
-      "prettySize": "1.65 kB",
-      "modifiedTime": "2017-09-19T19:47:16.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
-      "changeTime": "2017-10-08T14:24:00.000Z",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/",
+      "relativePath": "",
+      "extension": "",
+      "size": 224,
+      "prettySize": "224 B",
+      "modifiedTime": "2017-10-08T15:08:29.000Z",
+      "accessTime": "2018-03-31T17:12:33.114Z",
+      "changeTime": "2017-10-08T15:08:29.000Z",
       "birthTime": "2017-09-14T14:21:38.000Z",
       "root": "/",
-      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages",
-      "base": "index.js",
-      "ext": ".js",
-      "name": "index",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator",
+      "base": "src",
+      "ext": "",
+      "name": "src",
+      "relativeDirectory": "..",
       "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
+      "mode": 16877,
+      "nlink": 7,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
-      "blksize": 4096,
-      "ino": 39228985,
-      "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
-      "mtime": "2017-09-19T19:47:16.000Z",
+      "blksize": 4194304,
+      "ino": 39199633,
+      "blocks": 0,
+      "atimeMs": 1522516353113.607,
+      "mtimeMs": 1507475309000,
+      "ctimeMs": 1507475309000,
+      "birthtimeMs": 1505398898000,
+      "atime": "2018-03-31T17:12:33.114Z",
+      "mtime": "2017-10-08T15:08:29.000Z",
+      "ctime": "2017-10-08T15:08:29.000Z",
+      "birthtime": "2017-09-14T14:21:38.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/components absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/components absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1dec1008043c12521742664680948135",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/components",
+      "relativePath": "components",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-09-14T16:11:24.000Z",
+      "accessTime": "2018-03-31T17:12:33.116Z",
+      "changeTime": "2017-10-08T14:24:00.000Z",
+      "birthTime": "2017-09-14T16:11:11.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src",
+      "base": "components",
+      "ext": "",
+      "name": "components",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39228979,
+      "blocks": 0,
+      "atimeMs": 1522516353115.931,
+      "mtimeMs": 1505405484000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505405471000,
+      "atime": "2018-03-31T17:12:33.116Z",
+      "mtime": "2017-09-14T16:11:24.000Z",
+      "ctime": "2017-10-08T14:24:00.000Z",
+      "birthtime": "2017-09-14T16:11:11.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/layouts absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/layouts absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "81db3778f884be4d6d08a3d7763b385b",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/layouts",
+      "relativePath": "layouts",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-09-14T16:21:51.000Z",
+      "accessTime": "2018-03-31T17:12:33.116Z",
+      "changeTime": "2017-10-08T14:24:00.000Z",
+      "birthTime": "2017-09-14T16:21:37.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src",
+      "base": "layouts",
+      "ext": "",
+      "name": "layouts",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39228981,
+      "blocks": 0,
+      "atimeMs": 1522516353115.9224,
+      "mtimeMs": 1505406111000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505406097000,
+      "atime": "2018-03-31T17:12:33.116Z",
+      "mtime": "2017-09-14T16:21:51.000Z",
+      "ctime": "2017-10-08T14:24:00.000Z",
+      "birthtime": "2017-09-14T16:21:37.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "78828f7bf104633fad0a0988f935984b",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages",
+      "relativePath": "pages",
+      "extension": "",
+      "size": 256,
+      "prettySize": "256 B",
+      "modifiedTime": "2017-09-15T07:39:19.000Z",
+      "accessTime": "2018-03-31T17:12:33.116Z",
+      "changeTime": "2017-10-08T14:24:00.000Z",
+      "birthTime": "2017-09-14T14:21:38.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src",
+      "base": "pages",
+      "ext": "",
+      "name": "pages",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 8,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39228983,
+      "blocks": 0,
+      "atimeMs": 1522516353116.0935,
+      "mtimeMs": 1505461159000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505398898000,
+      "atime": "2018-03-31T17:12:33.116Z",
+      "mtime": "2017-09-15T07:39:19.000Z",
       "ctime": "2017-10-08T14:24:00.000Z",
       "birthtime": "2017-09-14T14:21:38.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/styles absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/styles absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "456f97ecf5e2872aae9fd0e2e065a16a",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/styles",
+      "relativePath": "styles",
+      "extension": "",
+      "size": 64,
+      "prettySize": "64 B",
+      "modifiedTime": "2017-10-08T15:08:29.000Z",
+      "accessTime": "2018-03-31T17:12:33.116Z",
+      "changeTime": "2017-10-08T15:08:29.000Z",
+      "birthTime": "2017-10-08T15:08:29.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src",
+      "base": "styles",
+      "ext": "",
+      "name": "styles",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 2,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39375643,
+      "blocks": 0,
+      "atimeMs": 1522516353115.8933,
+      "mtimeMs": 1507475309000,
+      "ctimeMs": 1507475309000,
+      "birthtimeMs": 1507475309000,
+      "atime": "2018-03-31T17:12:33.116Z",
+      "mtime": "2017-10-08T15:08:29.000Z",
+      "ctime": "2017-10-08T15:08:29.000Z",
+      "birthtime": "2017-10-08T15:08:29.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/templates absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "52d73cddf4912b054e2c2e4bf0c750a2",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates",
+      "relativePath": "templates",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2017-09-19T19:42:13.000Z",
+      "accessTime": "2018-03-31T17:12:33.116Z",
+      "changeTime": "2017-10-08T14:24:00.000Z",
+      "birthTime": "2017-09-19T19:42:06.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src",
+      "base": "templates",
+      "ext": "",
+      "name": "templates",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39228990,
+      "blocks": 0,
+      "atimeMs": 1522516353115.947,
+      "mtimeMs": 1505850133000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505850126000,
+      "atime": "2018-03-31T17:12:33.116Z",
+      "mtime": "2017-09-19T19:42:13.000Z",
+      "ctime": "2017-10-08T14:24:00.000Z",
+      "birthtime": "2017-09-19T19:42:06.000Z"
     },
     "/Users/gaelboyenval/web/perso/my-site-generator/src/components/container.js absPath of file": {
       "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/components/container.js absPath of file",
@@ -617,7 +970,7 @@
       "size": 139,
       "prettySize": "139 B",
       "modifiedTime": "2017-09-14T16:11:54.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
+      "accessTime": "2018-03-31T17:06:08.707Z",
       "changeTime": "2017-10-08T14:24:00.000Z",
       "birthTime": "2017-09-14T16:11:24.000Z",
       "root": "/",
@@ -625,19 +978,112 @@
       "base": "container.js",
       "ext": ".js",
       "name": "container",
+      "relativeDirectory": "components",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
-      "blksize": 4096,
+      "blksize": 4194304,
       "ino": 39228980,
       "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
+      "atimeMs": 1522515968706.996,
+      "mtimeMs": 1505405514000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505405484000,
+      "atime": "2018-03-31T17:06:08.707Z",
       "mtime": "2017-09-14T16:11:54.000Z",
       "ctime": "2017-10-08T14:24:00.000Z",
       "birthtime": "2017-09-14T16:11:24.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0a7ad5f2d20794cc43816bdad08495a1",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js",
+      "relativePath": "pages/index.js",
+      "extension": "js",
+      "size": 1372,
+      "prettySize": "1.37 kB",
+      "modifiedTime": "2018-03-31T17:37:30.265Z",
+      "accessTime": "2018-03-31T17:37:30.303Z",
+      "changeTime": "2018-03-31T17:37:30.265Z",
+      "birthTime": "2017-09-14T14:21:38.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "pages",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39228985,
+      "blocks": 8,
+      "atimeMs": 1522517850302.9102,
+      "mtimeMs": 1522517850264.9844,
+      "ctimeMs": 1522517850264.9844,
+      "birthtimeMs": 1505398898000,
+      "atime": "2018-03-31T17:37:30.303Z",
+      "mtime": "2018-03-31T17:37:30.265Z",
+      "ctime": "2018-03-31T17:37:30.265Z",
+      "birthtime": "2017-09-14T14:21:38.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "458e12aa326cef653de43c7034645914",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
+      "relativePath": "templates/blog-post.js",
+      "extension": "js",
+      "size": 487,
+      "prettySize": "487 B",
+      "modifiedTime": "2017-09-19T19:45:05.000Z",
+      "accessTime": "2018-03-31T17:00:45.229Z",
+      "changeTime": "2017-10-08T14:24:00.000Z",
+      "birthTime": "2017-09-19T19:42:13.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates",
+      "base": "blog-post.js",
+      "ext": ".js",
+      "name": "blog-post",
+      "relativeDirectory": "templates",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39228991,
+      "blocks": 8,
+      "atimeMs": 1522515645229.1245,
+      "mtimeMs": 1505850305000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505850133000,
+      "atime": "2018-03-31T17:00:45.229Z",
+      "mtime": "2017-09-19T19:45:05.000Z",
+      "ctime": "2017-10-08T14:24:00.000Z",
+      "birthtime": "2017-09-19T19:42:13.000Z"
     },
     "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/counter.js absPath of file": {
       "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/counter.js absPath of file",
@@ -656,7 +1102,7 @@
       "size": 520,
       "prettySize": "520 B",
       "modifiedTime": "2017-09-14T14:45:55.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
+      "accessTime": "2018-03-31T17:06:03.497Z",
       "changeTime": "2017-10-08T14:24:00.000Z",
       "birthTime": "2017-09-14T14:45:26.000Z",
       "root": "/",
@@ -664,16 +1110,21 @@
       "base": "counter.js",
       "ext": ".js",
       "name": "counter",
+      "relativeDirectory": "pages",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
-      "blksize": 4096,
+      "blksize": 4194304,
       "ino": 39228984,
       "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
+      "atimeMs": 1522515963497.3062,
+      "mtimeMs": 1505400355000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505400326000,
+      "atime": "2018-03-31T17:06:03.497Z",
       "mtime": "2017-09-14T14:45:55.000Z",
       "ctime": "2017-10-08T14:24:00.000Z",
       "birthtime": "2017-09-14T14:45:26.000Z"
@@ -683,7 +1134,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "4af0b2a76c6f12f7aa4083da4c7ea5e5",
+        "contentDigest": "80bfe86d4c6412c1e52b81cb9052b555",
         "mediaType": "application/javascript",
         "type": "File",
         "owner": "gatsby-source-filesystem"
@@ -692,71 +1143,35 @@
       "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/layouts/index.js",
       "relativePath": "layouts/index.js",
       "extension": "js",
-      "size": 960,
-      "prettySize": "960 B",
-      "modifiedTime": "2017-09-15T07:17:32.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
-      "changeTime": "2017-10-08T14:24:00.000Z",
+      "size": 953,
+      "prettySize": "953 B",
+      "modifiedTime": "2018-03-31T17:37:43.417Z",
+      "accessTime": "2018-03-31T17:37:43.445Z",
+      "changeTime": "2018-03-31T17:37:43.417Z",
       "birthTime": "2017-09-14T16:21:51.000Z",
       "root": "/",
       "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/layouts",
       "base": "index.js",
       "ext": ".js",
       "name": "index",
+      "relativeDirectory": "layouts",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
-      "blksize": 4096,
+      "blksize": 4194304,
       "ino": 39228982,
       "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
-      "mtime": "2017-09-15T07:17:32.000Z",
-      "ctime": "2017-10-08T14:24:00.000Z",
+      "atimeMs": 1522517863445.4592,
+      "mtimeMs": 1522517863416.581,
+      "ctimeMs": 1522517863416.581,
+      "birthtimeMs": 1505406111000,
+      "atime": "2018-03-31T17:37:43.445Z",
+      "mtime": "2018-03-31T17:37:43.417Z",
+      "ctime": "2018-03-31T17:37:43.417Z",
       "birthtime": "2017-09-14T16:21:51.000Z"
-    },
-    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file": {
-      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file",
-      "children": [
-        "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "feda6844ac71df8d09765a0200fd138c",
-        "mediaType": "text/markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "src",
-      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md",
-      "relativePath": "pages/pandas-and-bananas.md",
-      "extension": "md",
-      "size": 289,
-      "prettySize": "289 B",
-      "modifiedTime": "2017-09-15T07:39:28.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
-      "changeTime": "2017-10-08T14:24:00.000Z",
-      "birthTime": "2017-09-15T07:39:19.000Z",
-      "root": "/",
-      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages",
-      "base": "pandas-and-bananas.md",
-      "ext": ".md",
-      "name": "pandas-and-bananas",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 39228988,
-      "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
-      "mtime": "2017-09-15T07:39:28.000Z",
-      "ctime": "2017-10-08T14:24:00.000Z",
-      "birthtime": "2017-09-15T07:39:19.000Z"
     },
     "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/my-files.js absPath of file": {
       "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/my-files.js absPath of file",
@@ -775,7 +1190,7 @@
       "size": 980,
       "prettySize": "980 B",
       "modifiedTime": "2017-09-15T07:16:44.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
+      "accessTime": "2018-03-31T17:06:03.497Z",
       "changeTime": "2017-10-08T14:24:00.000Z",
       "birthTime": "2017-09-15T07:14:56.000Z",
       "root": "/",
@@ -783,19 +1198,68 @@
       "base": "my-files.js",
       "ext": ".js",
       "name": "my-files",
+      "relativeDirectory": "pages",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
-      "blksize": 4096,
+      "blksize": 4194304,
       "ino": 39228986,
       "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
+      "atimeMs": 1522515963497.3235,
+      "mtimeMs": 1505459804000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505459696000,
+      "atime": "2018-03-31T17:06:03.497Z",
       "mtime": "2017-09-15T07:16:44.000Z",
       "ctime": "2017-10-08T14:24:00.000Z",
       "birthtime": "2017-09-15T07:14:56.000Z"
+    },
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "bd2d10140e9f042426149b8c2eeb7719",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js",
+      "relativePath": "pages/page2.js",
+      "extension": "js",
+      "size": 1488,
+      "prettySize": "1.49 kB",
+      "modifiedTime": "2017-09-14T16:14:08.000Z",
+      "accessTime": "2018-03-31T17:06:03.497Z",
+      "changeTime": "2017-10-08T14:24:00.000Z",
+      "birthTime": "2017-09-14T14:35:38.000Z",
+      "root": "/",
+      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages",
+      "base": "page2.js",
+      "ext": ".js",
+      "name": "page2",
+      "relativeDirectory": "pages",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 39228987,
+      "blocks": 8,
+      "atimeMs": 1522515963497.3303,
+      "mtimeMs": 1505405648000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505399738000,
+      "atime": "2018-03-31T17:06:03.497Z",
+      "mtime": "2017-09-14T16:14:08.000Z",
+      "ctime": "2017-10-08T14:24:00.000Z",
+      "birthtime": "2017-09-14T14:35:38.000Z"
     },
     "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md absPath of file": {
       "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md absPath of file",
@@ -816,7 +1280,7 @@
       "size": 258,
       "prettySize": "258 B",
       "modifiedTime": "2017-09-15T07:19:01.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
+      "accessTime": "2018-03-31T17:06:03.497Z",
       "changeTime": "2017-10-08T14:24:00.000Z",
       "birthTime": "2017-09-15T07:18:35.000Z",
       "root": "/",
@@ -824,120 +1288,70 @@
       "base": "sweet-pandas-eating-sweets.md",
       "ext": ".md",
       "name": "sweet-pandas-eating-sweets",
+      "relativeDirectory": "pages",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
-      "blksize": 4096,
+      "blksize": 4194304,
       "ino": 39228989,
       "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
+      "atimeMs": 1522515963497.3442,
+      "mtimeMs": 1505459941000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505459915000,
+      "atime": "2018-03-31T17:06:03.497Z",
       "mtime": "2017-09-15T07:19:01.000Z",
       "ctime": "2017-10-08T14:24:00.000Z",
       "birthtime": "2017-09-15T07:18:35.000Z"
     },
-    "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js absPath of file": {
-      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js absPath of file",
-      "children": [],
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file",
+      "children": [
+        "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file >>> MarkdownRemark"
+      ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "458e12aa326cef653de43c7034645914",
-        "mediaType": "application/javascript",
+        "contentDigest": "feda6844ac71df8d09765a0200fd138c",
+        "mediaType": "text/markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "src",
-      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
-      "relativePath": "templates/blog-post.js",
-      "extension": "js",
-      "size": 487,
-      "prettySize": "487 B",
-      "modifiedTime": "2017-09-19T19:45:05.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
+      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md",
+      "relativePath": "pages/pandas-and-bananas.md",
+      "extension": "md",
+      "size": 289,
+      "prettySize": "289 B",
+      "modifiedTime": "2017-09-15T07:39:28.000Z",
+      "accessTime": "2018-03-31T17:06:03.497Z",
       "changeTime": "2017-10-08T14:24:00.000Z",
-      "birthTime": "2017-09-19T19:42:13.000Z",
-      "root": "/",
-      "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates",
-      "base": "blog-post.js",
-      "ext": ".js",
-      "name": "blog-post",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 39228991,
-      "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
-      "mtime": "2017-09-19T19:45:05.000Z",
-      "ctime": "2017-10-08T14:24:00.000Z",
-      "birthtime": "2017-09-19T19:42:13.000Z"
-    },
-    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js absPath of file": {
-      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "bd2d10140e9f042426149b8c2eeb7719",
-        "mediaType": "application/javascript",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "src",
-      "absolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js",
-      "relativePath": "pages/page2.js",
-      "extension": "js",
-      "size": 1488,
-      "prettySize": "1.49 kB",
-      "modifiedTime": "2017-09-14T16:14:08.000Z",
-      "accessTime": "2017-10-08T14:32:08.000Z",
-      "changeTime": "2017-10-08T14:24:00.000Z",
-      "birthTime": "2017-09-14T14:35:38.000Z",
+      "birthTime": "2017-09-15T07:39:19.000Z",
       "root": "/",
       "dir": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages",
-      "base": "page2.js",
-      "ext": ".js",
-      "name": "page2",
+      "base": "pandas-and-bananas.md",
+      "ext": ".md",
+      "name": "pandas-and-bananas",
+      "relativeDirectory": "pages",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
-      "blksize": 4096,
-      "ino": 39228987,
+      "blksize": 4194304,
+      "ino": 39228988,
       "blocks": 8,
-      "atime": "2017-10-08T14:32:08.000Z",
-      "mtime": "2017-09-14T16:14:08.000Z",
+      "atimeMs": 1522515963497.3372,
+      "mtimeMs": 1505461168000,
+      "ctimeMs": 1507472640000,
+      "birthtimeMs": 1505461159000,
+      "atime": "2018-03-31T17:06:03.497Z",
+      "mtime": "2017-09-15T07:39:28.000Z",
       "ctime": "2017-10-08T14:24:00.000Z",
-      "birthtime": "2017-09-14T14:35:38.000Z"
-    },
-    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file",
-      "internal": {
-        "content": "---\ntitle: Pandas and Bananas\ndate: \"2017-08-21\"\n---\n\nDo Pandas eat bananas? Check out this short video that shows that yes! pandas do seem to really enjoy bananas!\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4SZl1r2O_bY\" frameborder=\"0\" allowfullscreen></iframe>\n",
-        "contentDigest": "6dd13e6648fa32370d53452797c3a032",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Pandas and Bananas",
-        "date": "2017-08-21",
-        "parent": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md",
-      "fields": {
-        "slug": "/pandas-and-bananas/"
-      }
+      "birthtime": "2017-09-15T07:39:19.000Z"
     },
     "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md absPath of file >>> MarkdownRemark",
@@ -945,8 +1359,8 @@
       "parent": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md absPath of file",
       "internal": {
         "content": "---\ntitle: \"Sweet Pandas Eating Sweets\"\ndate: \"2017-08-10\"\n---\n\n## Pandas are really sweet.\n\nHere's a video of a panda eating sweets.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4n0xNbfJLR8\" frameborder=\"0\" allowfullscreen></iframe>\n",
-        "contentDigest": "f487b569a794a8f12d8497f889bd328b",
         "type": "MarkdownRemark",
+        "contentDigest": "c11f9bf484541706533284309af1a19a",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
           "slug": "default-site-plugin"
@@ -955,47 +1369,50 @@
       "frontmatter": {
         "title": "Sweet Pandas Eating Sweets",
         "date": "2017-08-10",
+        "_PARENT": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md absPath of file",
         "parent": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md absPath of file"
       },
+      "excerpt": "",
       "fileAbsolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/sweet-pandas-eating-sweets.md",
       "fields": {
         "slug": "/sweet-pandas-eating-sweets/"
       }
     },
-    "SitePage /pandas-and-bananas/": {
-      "path": "/pandas-and-bananas/",
-      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
-      "context": {
-        "slug": "/pandas-and-bananas/"
-      },
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "layout": "index",
-      "jsonName": "pandas-and-bananas.json",
-      "internalComponentName": "ComponentPandasAndBananas",
-      "updatedAt": 1507473128840,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
-      "id": "SitePage /pandas-and-bananas/",
-      "parent": "SOURCE",
+    "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file >>> MarkdownRemark",
       "children": [],
+      "parent": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file",
       "internal": {
-        "type": "SitePage",
-        "contentDigest": "0ef1b85ab581fe3d3766af21ce040604",
-        "owner": "internal-data-bridge"
+        "content": "---\ntitle: Pandas and Bananas\ndate: \"2017-08-21\"\n---\n\nDo Pandas eat bananas? Check out this short video that shows that yes! pandas do seem to really enjoy bananas!\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4SZl1r2O_bY\" frameborder=\"0\" allowfullscreen></iframe>\n",
+        "type": "MarkdownRemark",
+        "contentDigest": "dccfbb533bda64c68d061dd50814c539",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Pandas and Bananas",
+        "date": "2017-08-21",
+        "_PARENT": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file",
+        "parent": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md absPath of file"
+      },
+      "excerpt": "",
+      "fileAbsolutePath": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/pandas-and-bananas.md",
+      "fields": {
+        "slug": "/pandas-and-bananas/"
       }
     },
     "SitePage /sweet-pandas-eating-sweets/": {
-      "path": "/sweet-pandas-eating-sweets/",
-      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
-      "context": {
-        "slug": "/sweet-pandas-eating-sweets/"
-      },
-      "componentChunkName": "component---src-templates-blog-post-js",
       "layout": "index",
       "jsonName": "sweet-pandas-eating-sweets.json",
       "internalComponentName": "ComponentSweetPandasEatingSweets",
-      "updatedAt": 1507473128842,
+      "path": "/sweet-pandas-eating-sweets/",
+      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/sweet-pandas-eating-sweets/"
+      },
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
@@ -1004,18 +1421,39 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "72c53fa657a9e9f3fcb756b82c56b6c1",
+        "contentDigest": "72eae9ea75c020039c770d034ebba27a",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /pandas-and-bananas/": {
+      "layout": "index",
+      "jsonName": "pandas-and-bananas.json",
+      "internalComponentName": "ComponentPandasAndBananas",
+      "path": "/pandas-and-bananas/",
+      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {
+        "slug": "/pandas-and-bananas/"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/gaelboyenval/web/perso/my-site-generator/src/templates/blog-post.js",
+      "id": "SitePage /pandas-and-bananas/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "ddedd4772c854553f901e4c1fb2c2f5e",
         "owner": "internal-data-bridge"
       }
     },
     "SitePage /counter/": {
-      "path": "/counter/",
-      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/counter.js",
-      "componentChunkName": "component---src-pages-counter-js",
       "layout": "index",
       "jsonName": "counter.json",
       "internalComponentName": "ComponentCounter",
-      "updatedAt": 1507473128862,
+      "path": "/counter/",
+      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/counter.js",
+      "componentChunkName": "component---src-pages-counter-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -1025,18 +1463,17 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e21c78ba1a35d915d67a03e652e9b573",
+        "contentDigest": "2f79238ee959e9ede3871ae94b0503a1",
         "owner": "internal-data-bridge"
       }
     },
     "SitePage /": {
-      "path": "/",
-      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js",
-      "componentChunkName": "component---src-pages-index-js",
       "layout": "index",
       "jsonName": "index.json",
       "internalComponentName": "ComponentIndex",
-      "updatedAt": 1507473128865,
+      "path": "/",
+      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -1046,18 +1483,17 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7e26e406aad2fc5cc068fd999a403656",
+        "contentDigest": "765cf1e6172ee94e51627f08aca20259",
         "owner": "internal-data-bridge"
       }
     },
     "SitePage /my-files/": {
-      "path": "/my-files/",
-      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/my-files.js",
-      "componentChunkName": "component---src-pages-my-files-js",
       "layout": "index",
       "jsonName": "my-files.json",
       "internalComponentName": "ComponentMyFiles",
-      "updatedAt": 1507473128866,
+      "path": "/my-files/",
+      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/my-files.js",
+      "componentChunkName": "component---src-pages-my-files-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -1067,18 +1503,17 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a7c7afaae9760e48f862d82d20409b4e",
+        "contentDigest": "b4740bacc7facba3f7569009d08ff986",
         "owner": "internal-data-bridge"
       }
     },
     "SitePage /page2/": {
-      "path": "/page2/",
-      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js",
-      "componentChunkName": "component---src-pages-page-2-js",
       "layout": "index",
       "jsonName": "page-2.json",
       "internalComponentName": "ComponentPage2",
-      "updatedAt": 1507473128867,
+      "path": "/page2/",
+      "component": "/Users/gaelboyenval/web/perso/my-site-generator/src/pages/page2.js",
+      "componentChunkName": "component---src-pages-page-2-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -1088,14 +1523,14 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2ef19193b97b54c8fa3c5e4e4f2f6a76",
+        "contentDigest": "2bc238e9e2cb2c93f05bd44a8cf7d103",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "068f67fa4e4759bd28514bd4d805deb3"
+    "PLUGINS_HASH": "52b52497d95a6eb8337714aba86fd81b"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -1111,6 +1546,9 @@
       ]
     },
     "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ],
       "MarkdownRemark": [
         "/"
       ],
