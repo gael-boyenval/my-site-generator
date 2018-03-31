@@ -12,5 +12,11 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: 'gatsby-source-medium',
+      options: {
+        username: '@ogrange',
+      },
+    },
   ],
 };

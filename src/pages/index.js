@@ -6,13 +6,31 @@ const Posts = ({ posts }) => (
     <h4>{posts.totalCount} Posts</h4>
 
     {posts.edges.map(({ node }) => (
-      <div>
+      <div key={node.id}>
         <Link to={node.fields.slug} css={{ textDecoration: 'none', color: 'inherit' }}>
           <h3>
             {node.frontmatter.title} <span color="#BBB">— {node.frontmatter.date}</span>
           </h3>
           <p>{node.excerpt}</p>
         </Link>
+      </div>
+    ))}
+  </section>
+);
+
+const MediumPosts = ({ posts }) => (
+  <section>
+    <h4>{posts.totalCount} Posts</h4>
+
+    {posts.edges.map(({ node }) => (
+      <div key={node.id}>
+        <a
+          href={`https://medium.com/@ogrange/${node.uniqueSlug}`}
+          css={{ textDecoration: 'none', color: 'inherit' }}>
+          <h3>
+            {node.title} <span color="#BBB">— {node.createdAt}</span>
+          </h3>
+        </a>
       </div>
     ))}
   </section>
@@ -27,8 +45,8 @@ export default ({ data }) => (
           You and Your Research
         </a>”.
       </p>
-      {console.log(data.allMarkdownRemark.totalCount)}
       <Posts posts={data.allMarkdownRemark} />
+      <MediumPosts posts={data.allMediumPost} />
     </div>
   </div>
 );
@@ -53,6 +71,18 @@ export const query = graphql`
             slug
           }
           excerpt
+        }
+      }
+    }
+    allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+      edges {
+        node {
+          id
+          title
+          uniqueSlug
+          mediumUrl
+          createdAt
+          updatedAt
         }
       }
     }

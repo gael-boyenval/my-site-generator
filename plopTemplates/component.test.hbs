@@ -1,0 +1,18 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { configure, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import 'jest-styled-components';
+
+import {{pascalCase name}} from './index';
+
+configure({ adapter: new Adapter() });
+
+describe('Component {{pascalCase name}}', () => {
+  it('should be render without crash', () => {
+    const component = renderer.create(<{{pascalCase name}} />);
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

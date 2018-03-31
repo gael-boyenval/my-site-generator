@@ -7,7 +7,7 @@ const ListLink = props => (
   </li>
 );
 
-export default ({ data, children }) => (
+const Index = ({ data, children }) => (
   <div style={{ margin: '0 auto', maxWidth: 650, padding: '0 1rem' }}>
     <header style={{ marginBottom: '1.5rem' }}>
       <Link to="/" style={{ textShadow: 'none', backgroundImage: 'none' }}>
@@ -22,6 +22,8 @@ export default ({ data, children }) => (
     {children()}
   </div>
 );
+
+export default Index;
 
 /* eslint no-undef: "off" */
 export const query = graphql`
