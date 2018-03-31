@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb-base", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["react", "import"],
+  "settings": {
+    "import/core-modules": ["react", "prop-types", "styled-components", "config"]
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  }
+}
