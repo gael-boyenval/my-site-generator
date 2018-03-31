@@ -18,7 +18,6 @@
     "gatsby": "latest",
     "gatsby-link": "latest",
     "gatsby-plugin-styled-components": "latest",
-    "gatsby-plugin-typography": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-remark": "latest",
     "styled-components": "latest"

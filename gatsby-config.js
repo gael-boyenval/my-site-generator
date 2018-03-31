@@ -3,7 +3,6 @@ module.exports = {
     title: 'Gaël BOYENVAL',
   },
   plugins: [
-    'gatsby-plugin-typography',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-remark',
     {
