@@ -1,6 +1,6 @@
 {
   "name": "my-site-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Gael BOYENVAL",
   "description": "my static site generator using gael-boyenval.github.io as subtree",
   "repository": {
@@ -13,7 +13,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "publish": "git subtree push --prefix public sitedeploy master",
+    "publish-website": "git subtree push --prefix public sitedeploy master",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
