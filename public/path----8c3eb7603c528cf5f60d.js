@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{"./node_modules/json-loader/index.js!./.cache/json/layout-index.json":function(t,a){t.exports={data:{site:{siteMetadata:{title:"Pandas eats a lot !"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----8c3eb7603c528cf5f60d.js.map
