@@ -12,23 +12,23 @@ module.exports = function(plop) {
       {
         type: 'input',
         name: 'path',
-        message: 'component path from src/components',
+        message: 'component path from src ex: "components/atoms/"',
       },
     ],
     actions: [
       {
         type: 'add',
-        path: 'src/components/{{path}}{{pascalCase name}}/index.js',
-        templateFiles: './plopTemplates/index.hbs',
+        path: 'src/{{path}}{{pascalCase name}}/index.js',
+        templateFiles: './plopTemplates/indexFolder.hbs',
       },
       {
         type: 'add',
-        path: 'src/components/{{path}}{{pascalCase name}}/{{pascalCase name}}.js',
+        path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.js',
         templateFile: './plopTemplates/statelessComponent.hbs',
       },
       {
         type: 'add',
-        path: 'src/components/{{path}}{{pascalCase name}}/{{pascalCase name}}.test.js',
+        path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.test.js',
         templateFile: './plopTemplates/component.test.hbs',
       },
     ],
@@ -45,23 +45,23 @@ module.exports = function(plop) {
       {
         type: 'input',
         name: 'path',
-        message: 'component path from src/components ex "atoms/"',
+        message: 'component path from src ex: "components/atoms/"',
       },
     ],
     actions: [
       {
         type: 'add',
-        path: 'src/components/{{path}}{{pascalCase name}}/index.js',
-        templateFile: './plopTemplates/index.hbs',
+        path: 'src/{{path}}{{pascalCase name}}/index.js',
+        templateFile: './plopTemplates/indexFolder.hbs',
       },
       {
         type: 'add',
-        path: 'src/components/{{path}}{{pascalCase name}}/{{pascalCase name}}.js',
+        path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.js',
         templateFile: './plopTemplates/classComponent.hbs',
       },
       {
         type: 'add',
-        path: 'src/components/{{path}}{{pascalCase name}}/{{pascalCase name}}.test.js',
+        path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.test.js',
         templateFile: './plopTemplates/component.test.hbs',
       },
     ],

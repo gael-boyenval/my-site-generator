@@ -5,13 +5,13 @@ import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
 import 'jest-styled-components';
 
-import JustForGitHooks from './JustForGitHooks';
+import BlogPost from './BlogPost';
 
 configure({ adapter: new Adapter() });
 
-describe('Component JustForGitHooks', () => {
+describe('Component BlogPost', () => {
   it('should be render without crash', () => {
-    const component = renderer.create(<JustForGitHooks />);
+    const component = renderer.create(<BlogPost data={{}} />);
 
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

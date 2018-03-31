@@ -4,7 +4,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-styled-components',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-remark-component'],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
