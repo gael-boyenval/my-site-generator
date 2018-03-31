@@ -1,10 +1,11 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { configure, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from 'enzyme-adapter-react-15';
 import 'jest-styled-components';
 
-import {{pascalCase name}} from './index';
+import {{pascalCase name}} from './{{pascalCase name}}';
 
 configure({ adapter: new Adapter() });
 

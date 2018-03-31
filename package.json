@@ -8,6 +8,8 @@
     "url": "git+https://github.com/gael-boyenval/my-site-generator.git"
   },
   "scripts": {
+    "test": "jest",
+    "lint": "eslint 'src/**/*.js'",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -25,10 +27,18 @@
   },
   "devDependencies": {
     "babel-eslint": "latest",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.5",
     "eslint": "latest",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-react": "^7.7.0",
-    "plop": "^2.0.0"
+    "jest": "^22.4.3",
+    "jest-styled-components": "^5.0.0",
+    "plop": "^2.0.0",
+    "react-test-renderer": "^15.5.4"
   }
 }
