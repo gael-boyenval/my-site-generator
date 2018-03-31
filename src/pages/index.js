@@ -36,7 +36,7 @@ const MediumPosts = ({ posts }) => (
   </section>
 );
 
-export default ({ data }) => (
+const Index = ({ data }) => (
   <div>
     <h1>{data.site.siteMetadata.title}</h1>
     <div>
@@ -50,6 +50,8 @@ export default ({ data }) => (
     </div>
   </div>
 );
+
+export default Index;
 
 /* eslint no-undef: "off" */
 export const query = graphql`

@@ -1,5 +1,3 @@
-import Link from 'gatsby-link';
-
 import React from 'react';
 import styled from 'styled-components';
 
@@ -37,17 +35,17 @@ const Excerpt = styled.p`
   margin: 0;
 `;
 
-const User = props => (
+const User = ({ avatar, username, excerpt }) => (
   <UserWrapper>
-    <Avatar src={props.avatar} />
+    <Avatar src={avatar} />
     <Description>
-      <Username>{props.username}</Username>
-      <Excerpt>{props.excerpt}</Excerpt>
+      <Username>{username}</Username>
+      <Excerpt>{excerpt}</Excerpt>
     </Description>
   </UserWrapper>
 );
 
-export default () => (
+const Page2 = () => (
   <Container>
     <h1>About Styled Components</h1>
     <p>Styled Components is cool</p>
@@ -63,3 +61,5 @@ export default () => (
     />
   </Container>
 );
+
+export default Page2;

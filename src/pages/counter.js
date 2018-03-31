@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react';
 
 class Counter extends React.Component {
   constructor() {
-    super()
-    this.state = { count: 0 }
+    super();
+    this.state = { count: 0 };
   }
 
   render() {
@@ -18,8 +18,8 @@ class Counter extends React.Component {
           minus
         </button>
       </div>
-    )
+    );
   }
 }
 
-export default Counter
+export default Counter;
