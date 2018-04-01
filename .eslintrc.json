@@ -9,6 +9,9 @@
   "settings": {
     "import/core-modules": ["react", "prop-types", "styled-components", "config"]
   },
+  "globals": {
+    "graphql": true
+  },
   "parserOptions": {
     "ecmaVersion": 6,
     "ecmaFeatures": {
