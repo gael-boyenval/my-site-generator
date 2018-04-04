@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/globalStyles.js';
+import '../styles/GlobalStyles';
 
 import Header from '../components/organisms/Header';
 import Footer from '../components/organisms/Footer';

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Component ProjectItem should be render without crash 1`] = `
-<styled.div>
-   hello 
-</styled.div>
-`;

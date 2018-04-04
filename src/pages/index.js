@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import MainHero from '../components/organisms/MainHero';
 import PostList from '../components/organisms/PostList';
 
@@ -18,6 +20,10 @@ const MediumPosts = ({ posts }) => (
   </section>
 );
 
+MediumPosts.propTypes = {
+  posts: PropTypes.shape({}).isRequired,
+};
+
 const Index = ({ data }) => (
   <div>
     <MainHero title={data.site.siteMetadata.title} />
@@ -25,6 +31,10 @@ const Index = ({ data }) => (
     <MediumPosts posts={data.allMediumPost} />
   </div>
 );
+
+Index.propTypes = {
+  data: PropTypes.shape({}).isRequired,
+};
 
 export default Index;
 
