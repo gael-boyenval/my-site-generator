@@ -27,9 +27,12 @@ const globalStyles = injectGlobal`
     width:100%;
     overflow: auto;
     background: ${colors.base.darkest};
-    border: solid ${rem(spaces.s)} ${colors.white.dark};
     line-height: ${closestLineHeight(fontSizes.s, 1.5, unit / 2)};
     -webkit-font-smoothing: antialiased;
+  }
+
+  #___gatsby {
+    border: solid ${rem(spaces.s)} ${colors.white.dark};
   }
 
   [role='button'],
