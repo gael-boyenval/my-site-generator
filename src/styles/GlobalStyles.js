@@ -1,7 +1,7 @@
-import { injectGlobal } from 'styled-components'
-import { colors, fontSizes, spaces, family, unit } from './tokens'
-import { rem, closestLineHeight } from './utils'
-import fontFamilies from './fontFamilies'
+import { injectGlobal } from 'styled-components';
+import { colors, fontSizes, spaces, family, unit } from './tokens';
+import { rem, closestLineHeight } from './utils';
+import fontFamilies from './fontFamilies';
 
 const globalStyles = injectGlobal`
 
@@ -155,6 +155,6 @@ const globalStyles = injectGlobal`
     outline: none;
     cursor: pointer;
   }
-`
+`;
 
-export default globalStyles
+export default globalStyles;

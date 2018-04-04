@@ -40,12 +40,12 @@ const tokens = {
     xxl: 52,
     xxxl: 72,
   },
-}
+};
 
-export const { colors } = tokens
-export const { family } = tokens
-export const { fontSizes } = tokens
-export const { unit } = tokens
-export const { spaces } = tokens
+export const { colors } = tokens;
+export const { family } = tokens;
+export const { fontSizes } = tokens;
+export const { unit } = tokens;
+export const { spaces } = tokens;
 
-export default tokens
+export default tokens;
