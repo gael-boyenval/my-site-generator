@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Icon should be render without crash 1`] = `
+<styled.svg
+  inlineBlock={false}
+  size="1.2rem"
+  viewBox="0 0 12 12"
+>
+  <g>
+    <styled.line
+      theme={
+        Object {
+          "color": "#E0E1DD",
+          "fill": "none",
+          "strokeWidth": "1px",
+        }
+      }
+      x1="0"
+      x2="12"
+      y1="6"
+      y2="6"
+    />
+    ,
+    <styled.polyline
+      points="6 0 0 6 6 12"
+      theme={
+        Object {
+          "color": "#E0E1DD",
+          "fill": "none",
+          "strokeWidth": "1px",
+        }
+      }
+    />
+    ,
+  </g>
+</styled.svg>
+`;

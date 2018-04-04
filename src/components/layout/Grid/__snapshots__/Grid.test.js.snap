@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Grid should be render grid with a cell and a gutter 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+  margin-left: -3.6rem;
+  margin-right: -3.6rem;
+}
+
+.c0 > .sc-bdVaJa {
+  padding-right: 3.6rem;
+  padding-left: 3.6rem;
+}
+
+<div
+  className="c0"
+>
+  <styled.div>
+    col 1
+  </styled.div>
+  <styled.div>
+    col 2
+  </styled.div>
+</div>
+`;
+
+exports[`Component Grid should be render without crash 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+}
+
+<div
+  className="c0"
+/>
+`;

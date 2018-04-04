@@ -19,7 +19,7 @@ module.exports = function(plop) {
       {
         type: 'add',
         path: 'src/{{path}}{{pascalCase name}}/index.js',
-        templateFiles: './plopTemplates/indexFolder.hbs',
+        templateFile: './plopTemplates/indexFolder.hbs',
       },
       {
         type: 'add',

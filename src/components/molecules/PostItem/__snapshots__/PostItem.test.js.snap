@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component PostItem should be render without crash 1`] = `
+<styled.div
+  key="cest-un-hash-d-url"
+>
+  <styled.div>
+    <styled.h4 />
+  </styled.div>
+  <styled.div>
+    <GatsbyLink
+      to="cest-un-hash-d-url"
+    >
+      <styled.h3>
+        c’est un super titre
+      </styled.h3>
+    </GatsbyLink>
+  </styled.div>
+</styled.div>
+`;
