@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component MainHero should be render without crash 1`] = `
+<styled.div>
+  <styled.div
+    all={false}
+    bottom={false}
+    horizontal={false}
+    inline={false}
+    left={false}
+    right={false}
+    top={false}
+    vertical="xl"
+  >
+    <styled.div
+      gutter={true}
+    >
+      <styled.div
+        width={0.6666666666666666}
+      >
+        <styled.div
+          all={false}
+          bottom="l"
+          horizontal={false}
+          inline={false}
+          left={false}
+          right={false}
+          top={false}
+          vertical={false}
+        >
+          <styled.h1>
+            Design.
+            <br />
+            Code.
+            <br />
+            Partage.
+          </styled.h1>
+        </styled.div>
+        <styled.div
+          all={false}
+          bottom="s"
+          horizontal={false}
+          inline={false}
+          left={false}
+          right={false}
+          top={false}
+          vertical={false}
+        >
+          <styled.h4>
+            – Bonjour,
+          </styled.h4>
+        </styled.div>
+        <styled.p>
+          Je m’appelle Gaël, suis 
+          <styled.strong>
+            UX/UI designer
+          </styled.strong>
+           et
+           
+          <styled.strong>
+            développeur front freelance
+          </styled.strong>
+           avec plus de
+           
+          <styled.strong>
+            10 ans d’experience
+          </styled.strong>
+          . Je travaille sur 
+          <styled.strong>
+            Paris
+          </styled.strong>
+           en régie ou à distance pour des startups et des grand comptes. Vous pouvez aussi faire appel à moi pour des missions de 
+          <styled.strong>
+            consulting
+          </styled.strong>
+          .
+        </styled.p>
+        <styled.div
+          all={false}
+          bottom={false}
+          horizontal={false}
+          inline={false}
+          left={false}
+          right={false}
+          top="m"
+          vertical={false}
+        >
+          <ButtonLink>
+            Mon CV
+          </ButtonLink>
+          <br />
+          <ButtonLink>
+            les services
+          </ButtonLink>
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

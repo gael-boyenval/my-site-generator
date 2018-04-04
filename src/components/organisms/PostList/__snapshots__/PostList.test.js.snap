@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component PostList should be render without crash 1`] = `
+<styled.div>
+  <styled.div
+    all={false}
+    bottom="xxxl"
+    horizontal={false}
+    inline={false}
+    left={false}
+    right={false}
+    top={false}
+    vertical={false}
+  >
+    <styled.div
+      center={true}
+    >
+      <styled.div>
+        <styled.h2>
+          Mes derniers articles :
+        </styled.h2>
+      </styled.div>
+      <styled.div
+        width="fill"
+      >
+        <styled.div
+          all={false}
+          bottom={false}
+          horizontal={false}
+          inline={false}
+          left="m"
+          right={false}
+          top="s"
+          vertical={false}
+        >
+          <ButtonLink
+            href=""
+          >
+            voir le blog
+          </ButtonLink>
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+  <styled.div
+    gutter={true}
+  />
+  <styled.div
+    all={false}
+    bottom="xxl"
+    horizontal={false}
+    inline={false}
+    left={false}
+    right={false}
+    top={false}
+    vertical={false}
+  >
+    <ButtonLink
+      href=""
+    >
+      voir le blog
+    </ButtonLink>
+  </styled.div>
+</styled.div>
+`;

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Header should be render without crashing 1`] = `
+<styled.header>
+  <styled.div
+    center={true}
+    gutter={true}
+  >
+    <styled.div>
+      <GatsbyLink
+        to="/"
+      >
+        <styled.h3>
+          G.
+          <styled.span>
+            lorem ipsum
+          </styled.span>
+        </styled.h3>
+      </GatsbyLink>
+    </styled.div>
+    <styled.div
+      width="fill"
+    >
+      <nav>
+        <styled.ul>
+          <styled.li>
+            <GatsbyLink
+              to="/page2/"
+            >
+              Page 2
+            </GatsbyLink>
+          </styled.li>
+          <styled.li>
+            <GatsbyLink
+              to="/counter/"
+            >
+              Counter
+            </GatsbyLink>
+          </styled.li>
+          <styled.li>
+            <GatsbyLink
+              to="/my-files/"
+            >
+              files
+            </GatsbyLink>
+          </styled.li>
+        </styled.ul>
+      </nav>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;

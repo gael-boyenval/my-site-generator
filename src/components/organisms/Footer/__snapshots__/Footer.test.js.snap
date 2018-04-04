@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Footer should be render without crash 1`] = `
+<styled.footer>
+  <styled.div>
+    <styled.div
+      all={false}
+      bottom={false}
+      horizontal={false}
+      inline={false}
+      left={false}
+      right={false}
+      top={false}
+      vertical="xl"
+    >
+      <styled.div
+        all={false}
+        bottom="m"
+        horizontal={false}
+        inline={false}
+        left={false}
+        right={false}
+        top={false}
+        vertical={false}
+      >
+        <styled.h2>
+          Prenons un café
+        </styled.h2>
+      </styled.div>
+      <styled.div
+        all={false}
+        bottom="xs"
+        horizontal={false}
+        inline={false}
+        left={false}
+        right={false}
+        top={false}
+        vertical={false}
+      >
+        <styled.a>
+          linkedin
+        </styled.a>
+         - 
+        <styled.a>
+          medium
+        </styled.a>
+         - 
+        <styled.a>
+          github
+        </styled.a>
+         - 
+        <styled.a>
+          twitter
+        </styled.a>
+      </styled.div>
+      <styled.div
+        all={false}
+        bottom="l"
+        horizontal={false}
+        inline={false}
+        left={false}
+        right={false}
+        top={false}
+        vertical={false}
+      >
+        <styled.p>
+          gaelboyenval@icloud.com 
+          <br />
+           06 08 14 58 40
+        </styled.p>
+      </styled.div>
+      <styled.p>
+        Ce site à été créé avec beaucoup d’amour, 
+        <br />
+        mais aussi avec Gatsby, React et est hebergé par Github
+      </styled.p>
+    </styled.div>
+  </styled.div>
+</styled.footer>
+`;

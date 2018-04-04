@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Margin should be render all without crash 1`] = `
+.c0 {
+  margin: 2.4rem;
+}
+
+<div
+  className="c0"
+>
+  hello
+</div>
+`;
+
+exports[`Component Margin should be render left without crash 1`] = `
+.c0 {
+  margin-left: 2.4rem;
+}
+
+<div
+  className="c0"
+>
+  hello
+</div>
+`;
+
+exports[`Component Padding should be render left without crash 1`] = `
+.c0 {
+  padding-left: 2.4rem;
+}
+
+<div
+  className="c0"
+>
+  hello
+</div>
+`;
+
+exports[`Component Padding should be render without crash 1`] = `
+.c0 {
+  padding: 2.4rem;
+}
+
+<div
+  className="c0"
+>
+  hello
+</div>
+`;

@@ -1,10 +1,14 @@
-import { injectGlobal } from 'styled-components';
-import tokens from './tokens';
+import { injectGlobal } from 'styled-components'
+import { colors, fontSizes, spaces, family, unit } from './tokens'
+import { rem, closestLineHeight } from './utils'
+import fontFamilies from './fontFamilies'
 
 const globalStyles = injectGlobal`
+
+  ${fontFamilies};
+
   * {
     box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 
   html {
@@ -15,27 +19,17 @@ const globalStyles = injectGlobal`
   }
 
   body {
-    color: ${tokens.colors.white.dark};
-    font-family:
-      -apple-system,
-      Roboto,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Oxygen-Sans,
-      Ubuntu,
-      Cantarell,
-      "Helvetica Neue",
-      sans-serif;
-
+    color: ${colors.white.dark};
+    font-family: ${family.serif};
+    font-size: ${rem(fontSizes.s)};
+    margin: 0;
     height:100%;
     width:100%;
-    overflow: hidden;
-    font-size: ${tokens.fontSizes.m};
-    padding: 0;
-    margin: 0;
-    line-height: 1.35;
+    overflow: auto;
+    background: ${colors.base.darkest};
+    border: solid ${rem(spaces.s)} ${colors.white.dark};
+    line-height: ${closestLineHeight(fontSizes.s, 1.5, unit / 2)};
     -webkit-font-smoothing: antialiased;
-    background: ${tokens.colors.base.darkest};
   }
 
   [role='button'],
@@ -49,7 +43,7 @@ const globalStyles = injectGlobal`
     transition: color 0.2s ease;
 
     &:hover {
-      color: ${tokens.colors.electric};
+      color: ${colors.electric};
     }
   }
 
@@ -60,7 +54,12 @@ const globalStyles = injectGlobal`
   h5,
   h6 {
     margin: 0;
-    font-size: ${tokens.fontSizes.m};
+    font-size: ${rem(fontSizes.m)};
+  }
+
+  a,
+  p {
+    margin: 0;
   }
 
   ul,
@@ -110,10 +109,10 @@ const globalStyles = injectGlobal`
 
   input[type='checkbox'],
   input[type='radio'] {
-    width: ${tokens.spaces.m};
-    height: ${tokens.spaces.m};
+    width: ${rem(spaces.m)};
+    height: ${rem(spaces.m)};
     vertical-align: middle;
-    margin-right: ${tokens.spaces.xs};
+    margin-right: ${rem(spaces.xs)};
     overflow: hidden;
 
     &:checked:before {
@@ -135,8 +134,8 @@ const globalStyles = injectGlobal`
 
     &:checked:before {
       content: "";
-      width: calc(${tokens.spaces.m} - 0.6rem);
-      height: calc(${tokens.spaces.m} - 0.6rem);
+      width: calc(${rem(spaces.m)} - 0.6rem);
+      height: calc(${rem(spaces.m)} - 0.6rem);
       margin: 0.2rem;
       border-radius: 50%;
     }
@@ -156,6 +155,6 @@ const globalStyles = injectGlobal`
     outline: none;
     cursor: pointer;
   }
-`;
+`
 
-export default globalStyles;
+export default globalStyles
