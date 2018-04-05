@@ -26,7 +26,15 @@ const Title = styled.div`
 
 class PostItem extends PureComponent {
   static propTypes = {
-    post: PropTypes.shape({}).isRequired,
+    post: PropTypes.shape({
+      fields: PropTypes.shape({
+        slug: PropTypes.string.isRequired,
+      }).isRequired,
+      frontmatter: PropTypes.shape({
+        date: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
   };
 
   render() {
