@@ -2,17 +2,11 @@
 import React from 'react';
 import Header from './Header';
 
-describe('Component Header', () => {
-  const mockData = {
-    site: {
-      siteMetadata: {
-        title: 'lorem ipsum',
-      },
-    },
-  };
+import mock from './Header.mock';
 
+describe('Component Header', () => {
   it('should be render without crashing', () => {
-    const component = shallow(<Header data={mockData} />);
+    const component = shallow(<Header data={mock} />);
 
     expect(toJson(component)).toMatchSnapshot();
   });
