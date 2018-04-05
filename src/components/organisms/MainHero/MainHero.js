@@ -15,7 +15,7 @@ const Strong = styled.strong`
 
 const MainHero = () => (
   <Container>
-    <Padding vertical="xl">
+    <Padding vertical="wide">
       <Grid gutter>
         <Grid.Cell width={8 / 12}>
           <Margin bottom="l">
