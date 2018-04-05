@@ -11,7 +11,7 @@ exports[`Component Footer should be render without crash 1`] = `
       left={false}
       right={false}
       top={false}
-      vertical="xl"
+      vertical="wide"
     >
       <styled.div
         all={false}
