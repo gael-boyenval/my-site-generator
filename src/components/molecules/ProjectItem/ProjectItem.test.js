@@ -5,7 +5,8 @@ import { MemoryRouter as Router } from 'react-router-dom';
 import ProjectItem from './ProjectItem';
 import mock from './ProjectItem.mock';
 
-const shallowWithRouter = (node) => shallow(<Router>{node}</Router>);
+const shallowWithRouter = (node) =>
+  shallow(<Router initialEntries={[{ pathname: '/', key: 'testKey' }]}>{node}</Router>);
 
 describe('Component ProjectItem', () => {
   it('should be render without crash', () => {
