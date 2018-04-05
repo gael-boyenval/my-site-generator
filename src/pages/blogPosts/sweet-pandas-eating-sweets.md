@@ -1,6 +1,7 @@
 ---
-title: "Sweet Pandas Eating Sweets"
+title: "Sweet Pandas Eating Sweets qzef"
 date: "2017-08-10"
+type: "blog"
 ---
 
 ## Pandas are really sweet.
