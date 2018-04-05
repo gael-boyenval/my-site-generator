@@ -1,65 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component PostList should be render without crash 1`] = `
-<styled.div>
-  <styled.div
-    all={false}
-    bottom="xxxl"
-    horizontal={false}
-    inline={false}
-    left={false}
-    right={false}
-    top={false}
-    vertical={false}
-  >
-    <styled.div
-      center={true}
-    >
-      <styled.div>
-        <styled.h2>
-          Mes derniers articles :
-        </styled.h2>
-      </styled.div>
-      <styled.div
-        width="fill"
-      >
-        <styled.div
-          all={false}
-          bottom={false}
-          horizontal={false}
-          inline={false}
-          left="m"
-          right={false}
-          top="s"
-          vertical={false}
-        >
-          <ButtonLink
-            href=""
-          >
-            voir le blog
-          </ButtonLink>
-        </styled.div>
-      </styled.div>
-    </styled.div>
-  </styled.div>
-  <styled.div
-    gutter={true}
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "canGo": [Function],
+      "createHref": [Function],
+      "entries": Array [
+        Object {
+          "hash": "",
+          "key": "testKey",
+          "pathname": "/",
+          "search": "",
+        },
+      ],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "index": 0,
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "key": "testKey",
+        "pathname": "/",
+        "search": "",
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <PostList
+    posts={
+      Array [
+        Object {
+          "node": Object {
+            "fields": Object {
+              "slug": "cest-un-hash-d-url-1",
+            },
+            "frontmatter": Object {
+              "date": "2017-03-02",
+              "title": "c’est un super titre 1",
+            },
+          },
+        },
+        Object {
+          "node": Object {
+            "fields": Object {
+              "slug": "cest-un-hash-d-url-2",
+            },
+            "frontmatter": Object {
+              "date": "2018-05-03",
+              "title": "c’est un super titre",
+            },
+          },
+        },
+        Object {
+          "node": Object {
+            "fields": Object {
+              "slug": "cest-un-hash-d-url-3",
+            },
+            "frontmatter": Object {
+              "date": "2014-02-26",
+              "title": "c’est un super titre 3",
+            },
+          },
+        },
+      ]
+    }
   />
-  <styled.div
-    all={false}
-    bottom="xxl"
-    horizontal={false}
-    inline={false}
-    left={false}
-    right={false}
-    top={false}
-    vertical={false}
-  >
-    <ButtonLink
-      href=""
-    >
-      voir le blog
-    </ButtonLink>
-  </styled.div>
-</styled.div>
+</Router>
 `;
