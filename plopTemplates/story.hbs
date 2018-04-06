@@ -3,8 +3,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs'
+
 import {{pascalCase name}} from './{{pascalCase name}}';
+import propMock from './{{pascalCase name}}.mock';
 
 storiesOf('00 - unset', module)
   .addDecorator(withKnobs)
-  .add('{{pascalCase name}}', withInfo()(() => <{{pascalCase name}}>hello</{{pascalCase name}}>));
+  .add('{{pascalCase name}}', withInfo()(() => <{{pascalCase name}} {...propMock}>hello</{{pascalCase name}}>));

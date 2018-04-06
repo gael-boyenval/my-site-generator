@@ -95,3 +95,18 @@ exports[`Component Typography Title3 should be render without crash 1`] = `
   Hello
 </h3>
 `;
+
+exports[`Component Typography Title3Sans should be render without crash 1`] = `
+.c0 {
+  font-size: 2rem;
+  font-family: "Bw Modelica","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+<h3
+  className="c0"
+>
+  Hello
+</h3>
+`;

@@ -1,19 +1,16 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import PostItem from './PostItem';
+import { MemoryRouter as Router } from 'react-router-dom';
 
-const data = {
-  fields: {
-    slug: 'cest-un-hash-d-url',
-  },
-  frontmatter: {
-    title: 'c’est un super titre',
-  },
-};
+import PostItem from './PostItem';
+import mock from './PostItem.mock';
+
+const shallowWithRouter = (node) =>
+  shallow(<Router initialEntries={[{ pathname: '/', key: 'testKey' }]}>{node}</Router>);
 
 describe('Component PostItem', () => {
   it('should be render without crash', () => {
-    const component = shallow(<PostItem post={data} />);
+    const component = shallowWithRouter(<PostItem post={mock} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 });

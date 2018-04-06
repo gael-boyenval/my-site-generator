@@ -1,7 +1,15 @@
 /* eslint-disable no-undef */
 import React from 'react';
 
-import { BadassTitle, LeadBodyCopy, TinyHeading, Mention, SubTitle, Title3 } from './index';
+import {
+  BadassTitle,
+  LeadBodyCopy,
+  TinyHeading,
+  Mention,
+  SubTitle,
+  Title3,
+  Title3Sans,
+} from './index';
 
 describe('Component Typography BadassTitle', () => {
   it('should be render without crash', () => {
@@ -46,6 +54,14 @@ describe('Component Typography Mention', () => {
 describe('Component Typography Title3', () => {
   it('should be render without crash', () => {
     const component = shallow(<Title3>Hello</Title3>);
+
+    expect(toJson(component)).toMatchSnapshot();
+  });
+});
+
+describe('Component Typography Title3Sans', () => {
+  it('should be render without crash', () => {
+    const component = shallow(<Title3Sans>Hello</Title3Sans>);
 
     expect(toJson(component)).toMatchSnapshot();
   });

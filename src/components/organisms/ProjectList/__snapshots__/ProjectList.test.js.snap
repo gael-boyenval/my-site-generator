@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component ProjectList should be render without crash 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "canGo": [Function],
+      "createHref": [Function],
+      "entries": Array [
+        Object {
+          "hash": "",
+          "key": "testKey",
+          "pathname": "/",
+          "search": "",
+        },
+      ],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "index": 0,
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "key": "testKey",
+        "pathname": "/",
+        "search": "",
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <ProjectList
+    projects={
+      Array [
+        Object {
+          "node": Object {
+            "fields": Object {
+              "slug": "/projects/toto",
+            },
+            "frontmatter": Object {
+              "brandColor": "#153853",
+              "client": "Le Monde",
+              "mission": "Refonte du site mobile",
+              "myRole": "Dev Front",
+              "period": "2016 - 2018",
+            },
+          },
+        },
+        Object {
+          "node": Object {
+            "fields": Object {
+              "slug": "/projects/toto",
+            },
+            "frontmatter": Object {
+              "brandColor": "#248d59",
+              "client": "BNP Parisbas",
+              "mission": "Conception d’un back-office",
+              "myRole": "UI/UX & Dev front",
+              "period": "2016",
+            },
+          },
+        },
+      ]
+    }
+  />
+</Router>
+`;

@@ -17,6 +17,13 @@ export const SubTitle = styled.h2`
   line-height: ${closestLineHeight(fontSizes.l, 1.3, unit)};
 `;
 
+export const Title3Sans = styled.h3`
+  font-size: ${rem(fontSizes.s)};
+  font-family: ${family.sans};
+  line-height: ${closestLineHeight(fontSizes.m, 1.3, unit / 2)};
+  font-weight: bold;
+`;
+
 export const Title3 = styled.h3`
   font-size: ${rem(fontSizes.l)};
   font-family: ${family.serif};

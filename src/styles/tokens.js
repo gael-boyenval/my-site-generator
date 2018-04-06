@@ -39,6 +39,7 @@ const tokens = {
     xl: 48,
     xxl: 52,
     xxxl: 72,
+    wide: 120,
   },
 };
 

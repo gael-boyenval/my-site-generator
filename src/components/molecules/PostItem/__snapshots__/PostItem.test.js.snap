@@ -1,20 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component PostItem should be render without crash 1`] = `
-<styled.div
-  key="cest-un-hash-d-url"
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "canGo": [Function],
+      "createHref": [Function],
+      "entries": Array [
+        Object {
+          "hash": "",
+          "key": "testKey",
+          "pathname": "/",
+          "search": "",
+        },
+      ],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "index": 0,
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "key": "testKey",
+        "pathname": "/",
+        "search": "",
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
 >
-  <styled.div>
-    <styled.h4 />
-  </styled.div>
-  <styled.div>
-    <GatsbyLink
-      to="cest-un-hash-d-url"
-    >
-      <styled.h3>
-        c’est un super titre
-      </styled.h3>
-    </GatsbyLink>
-  </styled.div>
-</styled.div>
+  <PostItem
+    post={
+      Object {
+        "fields": Object {
+          "slug": "cest-un-hash-d-url",
+        },
+        "frontmatter": Object {
+          "date": "2018-05-03",
+          "title": "c’est un super titre",
+        },
+      }
+    }
+  />
+</Router>
 `;

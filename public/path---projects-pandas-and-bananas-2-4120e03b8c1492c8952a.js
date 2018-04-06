@@ -1,0 +1,2 @@
+webpackJsonp([0xac8d4154e8d9],{305:function(a,n){a.exports={pathContext:{slug:"/projects/pandas-and-bananas-2/"}}}});
+//# sourceMappingURL=path---projects-pandas-and-bananas-2-4120e03b8c1492c8952a.js.map

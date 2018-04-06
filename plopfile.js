@@ -36,6 +36,11 @@ module.exports = function(plop) {
         path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.stories.js',
         templateFile: './plopTemplates/story.hbs',
       },
+      {
+        type: 'add',
+        path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.mock.js',
+        templateFile: './plopTemplates/prop.mock.hbs',
+      },
     ],
   });
 
@@ -73,6 +78,11 @@ module.exports = function(plop) {
         type: 'add',
         path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.stories.js',
         templateFile: './plopTemplates/story.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/{{path}}{{pascalCase name}}/{{pascalCase name}}.mock.js',
+        templateFile: './plopTemplates/prop.mock.hbs',
       },
     ],
   });

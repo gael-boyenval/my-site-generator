@@ -15,7 +15,7 @@ class Footer extends PureComponent {
     return (
       <Wrapper>
         <Container>
-          <Padding vertical="xl">
+          <Padding vertical="wide">
             <Margin bottom="m">
               <SubTitle>Prenons un café</SubTitle>
             </Margin>

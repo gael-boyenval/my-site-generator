@@ -3,32 +3,13 @@ import PropTypes from 'prop-types';
 
 import MainHero from '../components/organisms/MainHero';
 import PostList from '../components/organisms/PostList';
-
-const MediumPosts = ({ posts }) => (
-  <section>
-    <h4>{posts.totalCount} Posts</h4>
-
-    {posts.edges.map(({ node }) => (
-      <div key={node.id}>
-        <a href={`https://medium.com/@ogrange/${node.uniqueSlug}`}>
-          <h3>
-            {node.title} <span color="#BBB">— {node.createdAt}</span>
-          </h3>
-        </a>
-      </div>
-    ))}
-  </section>
-);
-
-MediumPosts.propTypes = {
-  posts: PropTypes.shape({}).isRequired,
-};
+import ProjectList from '../components/organisms/ProjectList';
 
 const Index = ({ data }) => (
   <div>
     <MainHero title={data.site.siteMetadata.title} />
-    <PostList posts={data.allMarkdownRemark} />
-    <MediumPosts posts={data.allMediumPost} />
+    <ProjectList projects={data.projects.edges} />
+    <PostList posts={data.blogPosts.edges} />
   </div>
 );
 
@@ -46,30 +27,39 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
+    projects: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___order] }
+      filter: { fileAbsolutePath: { regex: "/(projects)/.*\\.md$/" } }
+    ) {
       edges {
         node {
           frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
+            order
+            client
+            mission
+            myRole
+            period
+            brandColor
           }
           fields {
             slug
           }
-          excerpt
         }
       }
     }
-    allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+    blogPosts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/(blogPosts)/.*\\.md$/" } }
+    ) {
       edges {
         node {
-          id
-          title
-          uniqueSlug
-          mediumUrl
-          createdAt
-          updatedAt
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+          fields {
+            slug
+          }
         }
       }
     }
