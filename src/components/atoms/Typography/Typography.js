@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { fontSizes, family, unit } from '../../../styles/tokens';
-import { rem, closestLineHeight } from '../../../styles/utils';
+import { fontSizes, family, unit } from 'Styles/tokens';
+import { rem, closestLineHeight } from 'Styles/utils';
 
 export const BadassTitle = styled.h1`
   font-size: ${rem(fontSizes.xxxl)};

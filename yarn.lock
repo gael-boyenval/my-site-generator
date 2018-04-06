@@ -3960,6 +3960,13 @@ eslint-config-xo-react@0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/eslint-config-xo-react/-/eslint-config-xo-react-0.11.1.tgz#1580c614234ef6f10de4675a802d6788f7346f7f"
 
+eslint-import-resolver-configurable@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-configurable/-/eslint-import-resolver-configurable-0.1.3.tgz#e6952cefdc9444e17106d7ec3b6c03f74b46b82a"
+  dependencies:
+    eslintrc-up "^0.1.0"
+    resolve "^1.1.7"
+
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
@@ -4067,6 +4074,14 @@ eslint@latest:
     strip-json-comments "~2.0.1"
     table "4.0.2"
     text-table "~0.2.0"
+
+eslintrc-up@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/eslintrc-up/-/eslintrc-up-0.1.0.tgz#766747b1e0c8cdadaf5210e752fd6636210c23f1"
+  dependencies:
+    find-up "^1.1.2"
+    read-pkg-up "^1.0.1"
+    safe-json-parse "^4.0.0"
 
 esniff@^1.1:
   version "1.1.0"
@@ -4516,7 +4531,7 @@ find-node-modules@^1.0.1:
     findup-sync "0.4.2"
     merge "^1.2.0"
 
-find-up@^1.0.0:
+find-up@^1.0.0, find-up@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
   dependencies:
@@ -5785,6 +5800,10 @@ indexes-of@^1.0.1:
 indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
+
+individual@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/individual/-/individual-2.0.0.tgz#833b097dad23294e76117a98fb38e0d9ad61bb97"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -10205,6 +10224,12 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
+rust-result@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rust-result/-/rust-result-1.0.0.tgz#34c75b2e6dc39fe5875e5bdec85b5e0f91536f72"
+  dependencies:
+    individual "^2.0.0"
+
 rx-lite-aggregates@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/rx-lite-aggregates/-/rx-lite-aggregates-4.0.8.tgz#753b87a89a11c95467c4ac1626c4efc4e05c67be"
@@ -10228,6 +10253,12 @@ safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, s
 safe-buffer@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
+
+safe-json-parse@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/safe-json-parse/-/safe-json-parse-4.0.0.tgz#7c0f578cfccd12d33a71c0e05413e2eca171eaac"
+  dependencies:
+    rust-result "^1.0.0"
 
 safe-regex@^1.1.0:
   version "1.1.0"

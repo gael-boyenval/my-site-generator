@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { spaces } from '../../../styles/tokens';
-import { rem } from '../../../styles/utils';
+import { spaces } from 'Styles/tokens';
+import { rem } from 'Styles/utils';
 
 const AllowedSpacesValues = Object.keys(spaces);
 

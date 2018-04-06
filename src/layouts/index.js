@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/GlobalStyles';
+import 'Styles/GlobalStyles';
 
-import Header from '../components/organisms/Header';
-import Footer from '../components/organisms/Footer';
+import Header from 'Organisms/Header';
+import Footer from 'Organisms/Footer';
 
 const Index = ({ data, children }) => (
   <div>

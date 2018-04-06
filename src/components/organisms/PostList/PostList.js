@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Container from '../../layout/Container';
-import { Margin, Padding } from '../../layout/Spaces';
-import Grid from '../../layout/Grid';
-import PostItem from '../../molecules/PostItem';
-import { SubTitle } from '../../atoms/Typography';
-import ButtonLink from '../../atoms/ButtonLink';
+import Container from 'Layout/Container';
+import { Margin, Padding } from 'Layout/Spaces';
+import Grid from 'Layout/Grid';
+import PostItem from 'Molecules/PostItem';
+import { SubTitle } from 'Atoms/Typography';
+import ButtonLink from 'Atoms/ButtonLink';
 
 class PostList extends PureComponent {
   static propTypes = {

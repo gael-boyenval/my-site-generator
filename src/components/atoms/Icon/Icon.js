@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import { colors } from '../../../styles/tokens';
+import { colors } from 'Styles/tokens';
 
 const Svg = styled.svg`
   display: block;

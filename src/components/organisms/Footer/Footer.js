@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import { SubTitle, TinyHeading, BodySans, Mention } from '../../atoms/Typography';
-import Container from '../../layout/Container';
-import { Padding, Margin } from '../../layout/Spaces';
+import { SubTitle, TinyHeading, BodySans, Mention } from 'Atoms/Typography';
+import Container from 'Layout/Container';
+import { Padding, Margin } from 'Layout/Spaces';
 
 const Wrapper = styled.footer`
   text-align: center;

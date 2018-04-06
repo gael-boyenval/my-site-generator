@@ -7,7 +7,17 @@
   "parser": "babel-eslint",
   "plugins": ["react", "import"],
   "settings": {
-    "import/core-modules": ["react", "prop-types", "styled-components", "config"]
+    "import/core-modules": ["react", "prop-types", "styled-components", "config"],
+    "import/resolver": {
+      "configurable": {
+        "Assets": "./src/assets",
+        "Styles": "./src/styles",
+        "Layout": "./src/components/layout",
+        "Atoms": "./src/components/atoms",
+        "Molecules": "./src/components/molecules",
+        "Organisms": "./src/components/organisms"
+      }
+    }
   },
   "globals": {
     "graphql": true

@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { unit } from '../../../styles/tokens';
-import { rem } from '../../../styles/utils';
+import { unit } from 'Styles/tokens';
+import { rem } from 'Styles/utils';
 
 export const gutterWidth = rem(unit * 3);
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { unit, spaces } from '../../../styles/tokens';
-import { rem } from '../../../styles/utils';
+import { unit, spaces } from 'Styles/tokens';
+import { rem } from 'Styles/utils';
 
 const Container = styled.div`
   max-width: ${rem(unit * 108)};

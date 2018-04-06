@@ -1,24 +1,24 @@
 import { css } from 'styled-components';
 
-import GMIw2 from '../assets/fonts/subset-GauthierFY-MediumItalic.woff2';
-import GMIw from '../assets/fonts/subset-GauthierFY-MediumItalic.woff';
-import GBw2 from '../assets/fonts/subset-GauthierFY-Bold.woff2';
-import GBw from '../assets/fonts/subset-GauthierFY-Bold.woff';
-import GMw2 from '../assets/fonts/subset-GauthierFY-Medium.woff2';
-import GMw from '../assets/fonts/subset-GauthierFY-Medium.woff';
-import GRw2 from '../assets/fonts/subset-GauthierFY-Regular.woff2';
-import GRw from '../assets/fonts/subset-GauthierFY-Regular.woff';
-import GRIw2 from '../assets/fonts/subset-GauthierFY-Italic.woff2';
-import GRIw from '../assets/fonts/subset-GauthierFY-Italic.woff';
-import GBIw2 from '../assets/fonts/subset-GauthierFY-BoldItalic.woff2';
-import GBIw from '../assets/fonts/subset-GauthierFY-BoldItalic.woff';
+import GMIw2 from 'Assets/fonts/subset-GauthierFY-MediumItalic.woff2';
+import GMIw from 'Assets/fonts/subset-GauthierFY-MediumItalic.woff';
+import GBw2 from 'Assets/fonts/subset-GauthierFY-Bold.woff2';
+import GBw from 'Assets/fonts/subset-GauthierFY-Bold.woff';
+import GMw2 from 'Assets/fonts/subset-GauthierFY-Medium.woff2';
+import GMw from 'Assets/fonts/subset-GauthierFY-Medium.woff';
+import GRw2 from 'Assets/fonts/subset-GauthierFY-Regular.woff2';
+import GRw from 'Assets/fonts/subset-GauthierFY-Regular.woff';
+import GRIw2 from 'Assets/fonts/subset-GauthierFY-Italic.woff2';
+import GRIw from 'Assets/fonts/subset-GauthierFY-Italic.woff';
+import GBIw2 from 'Assets/fonts/subset-GauthierFY-BoldItalic.woff2';
+import GBIw from 'Assets/fonts/subset-GauthierFY-BoldItalic.woff';
 
-import BRw2 from '../assets/fonts/subset-BwModelica-Regular.woff2';
-import BRw from '../assets/fonts/subset-BwModelica-Regular.woff';
-import BBw2 from '../assets/fonts/subset-BwModelica-Bold.woff2';
-import BBw from '../assets/fonts/subset-BwModelica-Bold.woff';
-import BEBw2 from '../assets/fonts/subset-BwModelica-ExtraBold.woff2';
-import BEBw from '../assets/fonts/subset-BwModelica-ExtraBold.woff';
+import BRw2 from 'Assets/fonts/subset-BwModelica-Regular.woff2';
+import BRw from 'Assets/fonts/subset-BwModelica-Regular.woff';
+import BBw2 from 'Assets/fonts/subset-BwModelica-Bold.woff2';
+import BBw from 'Assets/fonts/subset-BwModelica-Bold.woff';
+import BEBw2 from 'Assets/fonts/subset-BwModelica-ExtraBold.woff2';
+import BEBw from 'Assets/fonts/subset-BwModelica-ExtraBold.woff';
 
 const fontFamilies = css`
   @font-face {

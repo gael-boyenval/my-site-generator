@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TinyHeading } from '../Typography';
-import Icon from '../Icon';
-import { colors, unit } from '../../../styles/tokens';
-import { rem } from '../../../styles/utils';
-import { Margin } from '../../layout/Spaces';
+
+import { colors, unit } from 'Styles/tokens';
+import { rem } from 'Styles/utils';
+import { Margin } from 'Layout/Spaces';
+import { TinyHeading } from 'Atoms/Typography';
+import Icon from 'Atoms/Icon';
 
 const Button = TinyHeading.withComponent('a').extend`
   color: ${colors.electric};

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import MainHero from '../components/organisms/MainHero';
-import PostList from '../components/organisms/PostList';
-import ProjectList from '../components/organisms/ProjectList';
+import MainHero from 'Organisms/MainHero';
+import PostList from 'Organisms/PostList';
+import ProjectList from 'Organisms/ProjectList';
 
 const Index = ({ data }) => (
   <div>
