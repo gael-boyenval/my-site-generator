@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BadassTitle, TinyHeading, LeadBodyCopy } from '../../atoms/Typography';
-import Grid from '../../layout/Grid';
-import { Padding, Margin } from '../../layout/Spaces';
-import Container from '../../layout/Container';
-import ButtonLink from '../../atoms/ButtonLink';
-import { colors } from '../../../styles/tokens';
+import { BadassTitle, TinyHeading, LeadBodyCopy } from 'Atoms/Typography';
+import Grid from 'Layout/Grid';
+import { Padding, Margin } from 'Layout/Spaces';
+import Container from 'Layout/Container';
+import ButtonLink from 'Atoms/ButtonLink';
+import { colors } from 'Styles/tokens';
 
 const Strong = styled.strong`
   font-weight: bold;

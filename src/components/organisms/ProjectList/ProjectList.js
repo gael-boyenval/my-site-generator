@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Container from '../../layout/Container';
-import { Margin, Padding } from '../../layout/Spaces';
+import Container from 'Layout/Container';
+import { Margin, Padding } from 'Layout/Spaces';
 
-import { SubTitle } from '../../atoms/Typography';
+import { SubTitle } from 'Atoms/Typography';
 
-import ProjectItem from '../../molecules/ProjectItem';
+import ProjectItem from 'Molecules/ProjectItem';
 
 const ProjectList = ({ projects }) => (
   <Padding vertical="wide">

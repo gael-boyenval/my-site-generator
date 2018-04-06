@@ -2,9 +2,9 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
-import { Title3, TinyHeading } from '../../atoms/Typography';
-import { rem } from '../../../styles/utils';
-import { unit, colors, spaces } from '../../../styles/tokens';
+import { Title3, TinyHeading } from 'Atoms/Typography';
+import { rem } from 'Styles/utils';
+import { unit, colors, spaces } from 'Styles/tokens';
 
 const Wrapper = styled.div`
   display: flex;

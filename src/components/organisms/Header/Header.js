@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-import Grid from '../../layout/Grid';
-import { TinyHeading } from '../../atoms/Typography';
-import { spaces, unit, family } from '../../../styles/tokens';
-import { rem } from '../../../styles/utils';
+import Grid from 'Layout/Grid';
+import { TinyHeading } from 'Atoms/Typography';
+import { spaces, unit, family } from 'Styles/tokens';
+import { rem } from 'Styles/utils';
 
 const Menu = styled.ul`
   list-style-type: none;

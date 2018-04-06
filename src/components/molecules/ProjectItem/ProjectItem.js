@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-import Container from '../../layout/Container';
-import Grid from '../../layout/Grid';
-import { Padding } from '../../layout/Spaces';
-import Icon from '../../atoms/Icon';
-import { colors, unit } from '../../../styles/tokens';
-import { rem } from '../../../styles/utils';
+import Container from 'Layout/Container';
+import Grid from 'Layout/Grid';
+import { Padding } from 'Layout/Spaces';
+import Icon from 'Atoms/Icon';
+import { colors, unit } from 'Styles/tokens';
+import { rem } from 'Styles/utils';
 
-import { TinyHeading, Title3Sans, SubTitle, BodySans } from '../../atoms/Typography';
+import { TinyHeading, Title3Sans, SubTitle, BodySans } from 'Atoms/Typography';
 
 const Item = styled.div`
   width: 100%;
