@@ -14,6 +14,20 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 };
 
+exports.modifyWebpackConfig = ({ config }) =>
+  config.merge({
+    resolve: {
+      alias: {
+        Assets: path.resolve(__dirname, './src/assets'),
+        Styles: path.resolve(__dirname, './src/styles'),
+        Layout: path.resolve(__dirname, './src/components/layout'),
+        Atoms: path.resolve(__dirname, './src/components/atoms'),
+        Molecules: path.resolve(__dirname, './src/components/molecules'),
+        Organisms: path.resolve(__dirname, './src/components/organisms'),
+      },
+    },
+  });
+
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
