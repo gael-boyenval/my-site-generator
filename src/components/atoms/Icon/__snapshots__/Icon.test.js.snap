@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component Icon should be render without crash 1`] = `
-<styled.svg
+<Icon__Svg
   inlineBlock={false}
   size="1.2rem"
   viewBox="0 0 12 12"
 >
   <g>
-    <styled.line
+    <Icon__Line
       theme={
         Object {
           "color": "#E0E1DD",
@@ -21,7 +21,7 @@ exports[`Component Icon should be render without crash 1`] = `
       y2="6"
     />
     ,
-    <styled.polyline
+    <Icon__Line
       points="6 0 0 6 6 12"
       theme={
         Object {
@@ -33,5 +33,5 @@ exports[`Component Icon should be render without crash 1`] = `
     />
     ,
   </g>
-</styled.svg>
+</Icon__Svg>
 `;

@@ -7,20 +7,16 @@ import { rem } from 'Styles/utils';
 import { unit, colors, spaces } from 'Styles/tokens';
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
   min-height: ${rem(unit * 16)};
 `;
 
 const Metas = styled.div`
-  padding-bottom: ${rem(unit)};
+  padding-bottom: ${rem(unit - 1)};
   color: ${colors.base.light};
   border-bottom: solid 1px ${colors.base.light};
 `;
 
 const Title = styled.div`
-  flex: 100%;
-  display: flex;
   padding-top: ${rem(spaces.m)};
 `;
 

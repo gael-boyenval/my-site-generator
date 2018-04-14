@@ -3,6 +3,6 @@
 exports[`Component GridViewer should be render without crash 1`] = `
 <React.Fragment>
   <ShowGrid />
-  <styled.div />
+  <GridViewer__Stripes />
 </React.Fragment>
 `;

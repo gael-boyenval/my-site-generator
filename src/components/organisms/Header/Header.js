@@ -35,6 +35,10 @@ const Hidden = styled.span`
   text-indent: 100vh;
 `;
 
+const activeStyle = {
+  borderBottom: 'solid 1px currentColor',
+};
+
 const Header = ({ data }) => (
   <Wrapper>
     <Grid center gutter>
@@ -45,17 +49,28 @@ const Header = ({ data }) => (
           </Logo>
         </Link>
       </Grid.Cell>
-      <Grid.Cell width="fill">
+      <Grid.Cell size="fill">
         <nav>
           <Menu>
             <Item>
-              <Link to="/page2/">Page 2</Link>
+              <Link to="/" activeStyle={activeStyle}>
+                home
+              </Link>
             </Item>
             <Item>
-              <Link to="/counter/">Counter</Link>
+              <Link to="/cv/" activeStyle={activeStyle}>
+                CV
+              </Link>
             </Item>
             <Item>
-              <Link to="/my-files/">files</Link>
+              <Link to="/blog/" activeStyle={activeStyle}>
+                Blog
+              </Link>
+            </Item>
+            <Item>
+              <Link to="/my-files/" activeStyle={activeStyle}>
+                files
+              </Link>
             </Item>
           </Menu>
         </nav>

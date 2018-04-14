@@ -23,8 +23,8 @@ class PostList extends PureComponent {
               <Grid.Cell>
                 <SubTitle>Mes derniers articles :</SubTitle>
               </Grid.Cell>
-              <Grid.Cell width="fill">
-                <Margin top="s" left="m">
+              <Grid.Cell size="fill">
+                <Margin left="m">
                   <ButtonLink href="">voir le blog</ButtonLink>
                 </Margin>
               </Grid.Cell>
@@ -32,7 +32,7 @@ class PostList extends PureComponent {
           </Margin>
           <Grid gutter>
             {posts.map(({ node }) => (
-              <Grid.Cell key={node.fields.slug} width={1 / 3}>
+              <Grid.Cell key={node.fields.slug} size={1 / 3}>
                 <Margin bottom="xxl">
                   <PostItem post={node} />
                 </Margin>

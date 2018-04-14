@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component EditorialContent should be render without crash 1`] = `
-<styled.section
+<EditorialContent__EditorialWrapper
   className="editorial-content"
 >
-  <styled.div>
-    <styled.div
+  <Container>
+    <Grid
       gutter={true}
     >
-      <styled.div
+      <Grid__GridCell
         push={0.08333333333333333}
         size={0.5833333333333334}
       >
-        <styled.div>
+        <EditorialContent__TextContainer>
           <div
             key="h-1"
           >
@@ -21,18 +21,18 @@ exports[`Component EditorialContent should be render without crash 1`] = `
             <div
               key="h-2"
             >
-              <styled.h2
+              <Typography__SubTitle
                 key="h-3"
               >
                 Hello je suis un composant react
-              </styled.h2>
+              </Typography__SubTitle>
               
               
-              <styled.h3
+              <Typography__Title3Sans
                 key="h-4"
               >
                 Hello je suis un composant react
-              </styled.h3>
+              </Typography__Title3Sans>
             </div>
             
             
@@ -546,9 +546,9 @@ exports[`Component EditorialContent should be render without crash 1`] = `
               Some text to show that the reference links can follow later.
             </p>
           </div>
-        </styled.div>
-      </styled.div>
-    </styled.div>
-  </styled.div>
-</styled.section>
+        </EditorialContent__TextContainer>
+      </Grid__GridCell>
+    </Grid>
+  </Container>
+</EditorialContent__EditorialWrapper>
 `;

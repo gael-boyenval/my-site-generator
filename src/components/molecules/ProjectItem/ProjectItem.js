@@ -20,10 +20,10 @@ const Item = styled.div`
 
 const ItemContainer = Container.extend`
   height: ${rem(unit * 7)};
-  display: flex;
 `;
 
 const ProjectName = Title3Sans.extend`
+  padding-top: ${rem(unit / 2)};
   transform: translateY(-${rem(2)});
 `;
 
@@ -36,8 +36,13 @@ const ItemHover = styled.div`
 `;
 
 const TitleWrapper = Grid.extend`
+  padding: ${rem(unit)} 0 ${rem(unit)};
+`;
+
+const Border = styled.div`
+  padding-top: ${rem(unit * 1.5)};
+  margin-bottom: ${rem(unit)};
   border-bottom: solid 1px ${colors.base.light};
-  height: ${rem(unit * 7)};
 `;
 
 const Wrapper = styled(Link)`
@@ -66,12 +71,18 @@ const Wrapper = styled(Link)`
   }
 `;
 
+const IconWrapper = styled.div`
+  padding-top: ${rem(unit * 1.5)};
+`;
+
 const ItemHoverInfo = BodySans.extend`
   font-weight: bold;
+  transform: translateY(${rem(4)});
 `;
 
 const ClientHover = SubTitle.extend`
-  text-align: right;
+  text-align: left;
+  transform: translateY(${rem(unit / 2)});
 `;
 
 const ProjectItem = ({
@@ -80,44 +91,55 @@ const ProjectItem = ({
   <Wrapper to={slug}>
     <Item>
       <ItemContainer>
-        <Grid gutter center>
-          <Grid.Cell width={1 / 12}>
-            <TinyHeading>{num}</TinyHeading>
+        <Grid gutter>
+          <Grid.Cell size={1 / 12}>
+            <Padding top="m">
+              <TinyHeading>{num}</TinyHeading>
+            </Padding>
           </Grid.Cell>
-          <Grid.Cell width={7 / 12}>
-            <TitleWrapper gutter center>
-              <Grid.Cell width={5 / 7}>
+          <Grid.Cell size={7 / 12}>
+            <TitleWrapper gutter>
+              <Grid.Cell size={5 / 7}>
                 <ProjectName>
                   {client} - {mission}
                 </ProjectName>
               </Grid.Cell>
-              <Grid.Cell width={2 / 7}>
-                <TinyHeading>{period}</TinyHeading>
+              <Grid.Cell size={2 / 7}>
+                <Padding top="s">
+                  <TinyHeading>{period}</TinyHeading>
+                </Padding>
               </Grid.Cell>
             </TitleWrapper>
           </Grid.Cell>
-          <Grid.Cell width={1 / 12}>
-            <Icon name="arrowRight" />
+          <Grid.Cell size={1 / 12}>
+            <IconWrapper>
+              <Icon name="arrowRight" size={rem(unit * 2)} color={colors.white.dark} />
+            </IconWrapper>
+          </Grid.Cell>
+        </Grid>
+        <Grid gutter>
+          <Grid.Cell size={7 / 12} push={1 / 12}>
+            <Border />
           </Grid.Cell>
         </Grid>
       </ItemContainer>
     </Item>
     <ItemHover bg={brandColor}>
       <Grid gutter center>
-        <Grid.Cell width={1 / 4}>
+        <Grid.Cell size={1 / 4}>
           <Padding left="xl">
             <ClientHover>{client}</ClientHover>
           </Padding>
         </Grid.Cell>
-        <Grid.Cell width={1 / 4}>
+        <Grid.Cell size={1 / 4}>
           <TinyHeading>mission</TinyHeading>
           <ItemHoverInfo>{mission}</ItemHoverInfo>
         </Grid.Cell>
-        <Grid.Cell width={1 / 4}>
+        <Grid.Cell size={1 / 4}>
           <TinyHeading>rôle</TinyHeading>
           <ItemHoverInfo>{myRole}</ItemHoverInfo>
         </Grid.Cell>
-        <Grid.Cell width={1 / 4}>
+        <Grid.Cell size={1 / 4}>
           <TinyHeading>années</TinyHeading>
           <ItemHoverInfo>{period}</ItemHoverInfo>
         </Grid.Cell>

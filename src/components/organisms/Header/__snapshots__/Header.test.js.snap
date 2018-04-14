@@ -1,52 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component Header should be render without crashing 1`] = `
-<styled.header>
-  <styled.div
+<Header__Wrapper>
+  <Grid
     center={true}
     gutter={true}
   >
-    <styled.div>
+    <Grid__GridCell
+      push={null}
+    >
       <GatsbyLink
         to="/"
       >
-        <styled.h3>
+        <Header__Logo>
           G.
-          <styled.span>
+          <Header__Hidden>
             lorem ipsum
-          </styled.span>
-        </styled.h3>
+          </Header__Hidden>
+        </Header__Logo>
       </GatsbyLink>
-    </styled.div>
-    <styled.div
-      width="fill"
+    </Grid__GridCell>
+    <Grid__GridCell
+      push={null}
+      size="fill"
     >
       <nav>
-        <styled.ul>
-          <styled.li>
+        <Header__Menu>
+          <Typography__TinyHeading>
             <GatsbyLink
-              to="/page2/"
+              activeStyle={
+                Object {
+                  "borderBottom": "solid 1px currentColor",
+                }
+              }
+              to="/"
             >
-              Page 2
+              home
             </GatsbyLink>
-          </styled.li>
-          <styled.li>
+          </Typography__TinyHeading>
+          <Typography__TinyHeading>
             <GatsbyLink
-              to="/counter/"
+              activeStyle={
+                Object {
+                  "borderBottom": "solid 1px currentColor",
+                }
+              }
+              to="/cv/"
             >
-              Counter
+              CV
             </GatsbyLink>
-          </styled.li>
-          <styled.li>
+          </Typography__TinyHeading>
+          <Typography__TinyHeading>
             <GatsbyLink
+              activeStyle={
+                Object {
+                  "borderBottom": "solid 1px currentColor",
+                }
+              }
+              to="/blog/"
+            >
+              Blog
+            </GatsbyLink>
+          </Typography__TinyHeading>
+          <Typography__TinyHeading>
+            <GatsbyLink
+              activeStyle={
+                Object {
+                  "borderBottom": "solid 1px currentColor",
+                }
+              }
               to="/my-files/"
             >
               files
             </GatsbyLink>
-          </styled.li>
-        </styled.ul>
+          </Typography__TinyHeading>
+        </Header__Menu>
       </nav>
-    </styled.div>
-  </styled.div>
-</styled.header>
+    </Grid__GridCell>
+  </Grid>
+</Header__Wrapper>
 `;
