@@ -2,14 +2,16 @@
 
 exports[`Component ButtonLink should be render without crash 1`] = `
 <styled.a>
-  <Icon
-    color="#62E0BB"
-    fill="none"
-    inlineBlock={true}
-    name="arrowRight"
-    size="1.2rem"
-    strokeWidth="1px"
-  />
+  <styled.div>
+    <Icon
+      color="#E0E1DD"
+      fill="none"
+      inlineBlock={false}
+      name="arrowRight"
+      size="2.4rem"
+      strokeWidth="1px"
+    />
+  </styled.div>
   <styled.div
     all={false}
     bottom={false}
