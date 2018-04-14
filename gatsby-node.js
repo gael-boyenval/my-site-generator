@@ -20,6 +20,7 @@ exports.modifyWebpackConfig = ({ config }) =>
       alias: {
         Assets: path.resolve(__dirname, './src/assets'),
         Styles: path.resolve(__dirname, './src/styles'),
+        Utils: path.resolve(__dirname, './src/components/utils'),
         Layout: path.resolve(__dirname, './src/components/layout'),
         Atoms: path.resolve(__dirname, './src/components/atoms'),
         Molecules: path.resolve(__dirname, './src/components/molecules'),

@@ -3,6 +3,7 @@ import { configure, setAddon, addDecorator } from '@storybook/react';
 import { MemoryRouter } from 'react-router';
 import { withInfo } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
+import GridViewer, { Wrapper, ContentWrapper } from 'Utils/GridViewer';
 
 setOptions({
   addonPanelInRight: true,
@@ -10,7 +11,16 @@ setOptions({
   name: 'gaelboyenval.fr',
 });
 
-addDecorator((story) => <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>);
+addDecorator((story) => (
+  <MemoryRouter initialEntries={['/']}>
+    <Wrapper>
+      <ContentWrapper>
+        {story()}
+        <GridViewer />
+      </ContentWrapper>
+    </Wrapper>
+  </MemoryRouter>
+));
 
 import '../src/styles/GlobalStyles';
 
