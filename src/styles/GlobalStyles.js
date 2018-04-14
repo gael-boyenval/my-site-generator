@@ -4,8 +4,8 @@ import { rem, closestLineHeight } from 'Styles/utils';
 import fontFamilies from 'Styles/fontFamilies';
 
 const globalStyles = injectGlobal`
-
   ${fontFamilies};
+
 
   * {
     box-sizing: border-box;
@@ -25,14 +25,10 @@ const globalStyles = injectGlobal`
     margin: 0;
     height:100%;
     width:100%;
-    overflow: auto;
     background: ${colors.base.darkest};
-    line-height: ${closestLineHeight(fontSizes.s, 1.5, unit / 2)};
+    line-height: ${closestLineHeight(fontSizes.s, 1.5, unit)};
     -webkit-font-smoothing: antialiased;
-  }
-
-  #___gatsby {
-    border: solid ${rem(spaces.s)} ${colors.white.dark};
+    font-variant-ligatures: common-ligatures;
   }
 
   [role='button'],
@@ -50,37 +46,14 @@ const globalStyles = injectGlobal`
     }
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    font-size: ${rem(fontSizes.m)};
+  p, ol, ul, h2, h3 {
+    margin: ${rem(unit * 2)} 0;
   }
 
-  a,
-  p {
-    margin: 0;
+  h1 {
+    margin: ${rem(unit * 3)} 0;
   }
 
-  ul,
-  ol,
-  li,
-  dl,
-  dt,
-  dd {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-  }
 
   form {
     margin: 0;
