@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { unit } from 'Styles/tokens';
+import { gutter } from 'Styles/tokens';
 import { rem } from 'Styles/utils';
 
-export const gutterWidth = rem(unit * 3);
+export const gutterWidth = rem(gutter / 2);
 
 const getPredefinedFlexValue = (value) =>
   ({
@@ -39,8 +39,10 @@ const setCellWidth = (width) => {
   };
 };
 
+const setPush = (push) => (push && { marginLeft: `${push * 100}%` }) || {};
+
 const GridCell = styled.div.attrs({
-  style: ({ width }) => setCellWidth(width),
+  style: ({ size, push }) => Object.assign({}, setCellWidth(size), setPush(push)),
 })`
   ${({ alignRight }) =>
     alignRight &&
@@ -50,7 +52,12 @@ const GridCell = styled.div.attrs({
 `;
 
 GridCell.propTypes = {
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  push: PropTypes.number,
+};
+
+GridCell.defaultProps = {
+  push: null,
 };
 
 const Grid = styled.div`

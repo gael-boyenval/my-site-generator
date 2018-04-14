@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component PostHeader should be render without crash 1`] = `
+<styled.header>
+  <styled.div />
+  <styled.div>
+    <styled.div
+      gutter={true}
+    >
+      <styled.div
+        push={null}
+        size={0.75}
+      >
+        <styled.div>
+          <styled.div
+            gutter={true}
+          >
+            <styled.div
+              push={0.1111111111111111}
+              size={0.7777777777777778}
+            >
+              <styled.h4>
+                2018-04-09
+              </styled.h4>
+              <styled.div
+                all={false}
+                bottom={false}
+                horizontal={false}
+                inline={false}
+                left={false}
+                right={false}
+                top={false}
+                vertical="m"
+              >
+                <styled.h1>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                </styled.h1>
+              </styled.div>
+              <styled.p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </styled.p>
+            </styled.div>
+          </styled.div>
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.header>
+`;

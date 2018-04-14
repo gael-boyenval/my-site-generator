@@ -20,4 +20,16 @@ describe('Component Grid', () => {
 
     expect(toJson(component)).toMatchSnapshot();
   });
+
+  it('should be render grid with a cell with 1/2push and 1/2 size', () => {
+    const component = shallow(
+      <Grid gutter>
+        <Grid.Cell size={1 / 2} push={1 / 2}>
+          col 1 size 50%, push 50%
+        </Grid.Cell>
+      </Grid>,
+    );
+
+    expect(toJson(component)).toMatchSnapshot();
+  });
 });
