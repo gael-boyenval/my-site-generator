@@ -3,7 +3,9 @@ import React from 'react';
 
 import {
   BadassTitle,
+  EditorialTitle,
   LeadBodyCopy,
+  LeadBodyCopyEditorial,
   TinyHeading,
   Mention,
   SubTitle,
@@ -14,6 +16,14 @@ import {
 describe('Component Typography BadassTitle', () => {
   it('should be render without crash', () => {
     const component = shallow(<BadassTitle>Hello</BadassTitle>);
+
+    expect(toJson(component)).toMatchSnapshot();
+  });
+});
+
+describe('Component Typography EditorialTitle', () => {
+  it('should be render without crash', () => {
+    const component = shallow(<EditorialTitle>Hello</EditorialTitle>);
 
     expect(toJson(component)).toMatchSnapshot();
   });
@@ -30,6 +40,13 @@ describe('Component Typography SubTitle', () => {
 describe('Component Typography LeadBodyCopy', () => {
   it('should be render without crash', () => {
     const component = shallow(<LeadBodyCopy>Hello</LeadBodyCopy>);
+
+    expect(toJson(component)).toMatchSnapshot();
+  });
+});
+describe('Component Typography LeadBodyCopyEditorial', () => {
+  it('should be render without crash', () => {
+    const component = shallow(<LeadBodyCopyEditorial>Hello</LeadBodyCopyEditorial>);
 
     expect(toJson(component)).toMatchSnapshot();
   });

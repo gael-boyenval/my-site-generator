@@ -4,11 +4,13 @@ import { storiesOf } from '@storybook/react';
 
 import {
   BadassTitle,
+  EditorialTitle,
   LeadBodyCopy,
+  LeadBodyCopyEditorial,
   TinyHeading,
   Mention,
-  BodySans,
   SubTitle,
+  BodySans,
   Title3,
   Title3Sans,
 } from './Typography';
@@ -16,6 +18,8 @@ import {
 storiesOf('02 - Atoms', module).add('Typography', () => (
   <div>
     <BadassTitle>BadassTitle</BadassTitle>
+    <br />
+    <EditorialTitle>EditorialTitle</EditorialTitle>
     <br />
     <SubTitle>SubTitle</SubTitle>
     <br />
@@ -26,6 +30,8 @@ storiesOf('02 - Atoms', module).add('Typography', () => (
     <TinyHeading>TinyHeading</TinyHeading>
     <br />
     <LeadBodyCopy>LeadBodyCopy</LeadBodyCopy>
+    <br />
+    <LeadBodyCopyEditorial>LeadBodyCopyEditorial</LeadBodyCopyEditorial>
     <br />
     <BodySans>BodySans</BodySans>
     <br />
