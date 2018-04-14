@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component MainHero should be render without crash 1`] = `
-<styled.div>
-  <styled.div
+<Container>
+  <Spaces__Padding
     all={false}
     bottom={false}
     horizontal={false}
@@ -12,13 +12,14 @@ exports[`Component MainHero should be render without crash 1`] = `
     top={false}
     vertical="wide"
   >
-    <styled.div
+    <Grid
       gutter={true}
     >
-      <styled.div
-        width={0.6666666666666666}
+      <Grid__GridCell
+        push={null}
+        size={0.6666666666666666}
       >
-        <styled.div
+        <Spaces__Margin
           all={false}
           bottom="l"
           horizontal={false}
@@ -28,15 +29,15 @@ exports[`Component MainHero should be render without crash 1`] = `
           top={false}
           vertical={false}
         >
-          <styled.h1>
+          <Typography__BadassTitle>
             Design.
             <br />
             Code.
             <br />
             Partage.
-          </styled.h1>
-        </styled.div>
-        <styled.div
+          </Typography__BadassTitle>
+        </Spaces__Margin>
+        <Spaces__Margin
           all={false}
           bottom="s"
           horizontal={false}
@@ -46,36 +47,36 @@ exports[`Component MainHero should be render without crash 1`] = `
           top={false}
           vertical={false}
         >
-          <styled.h4>
+          <Typography__TinyHeading>
             – Bonjour,
-          </styled.h4>
-        </styled.div>
-        <styled.p>
+          </Typography__TinyHeading>
+        </Spaces__Margin>
+        <Typography__LeadBodyCopy>
           Je m’appelle Gaël, suis 
-          <styled.strong>
+          <MainHero__Strong>
             UX/UI designer
-          </styled.strong>
+          </MainHero__Strong>
            et
            
-          <styled.strong>
+          <MainHero__Strong>
             développeur front freelance
-          </styled.strong>
+          </MainHero__Strong>
            avec plus de
            
-          <styled.strong>
+          <MainHero__Strong>
             10 ans d’experience
-          </styled.strong>
+          </MainHero__Strong>
           . Je travaille sur 
-          <styled.strong>
+          <MainHero__Strong>
             Paris
-          </styled.strong>
+          </MainHero__Strong>
            en régie ou à distance pour des startups et des grand comptes. Vous pouvez aussi faire appel à moi pour des missions de 
-          <styled.strong>
+          <MainHero__Strong>
             consulting
-          </styled.strong>
+          </MainHero__Strong>
           .
-        </styled.p>
-        <styled.div
+        </Typography__LeadBodyCopy>
+        <Spaces__Margin
           all={false}
           bottom={false}
           horizontal={false}
@@ -92,9 +93,9 @@ exports[`Component MainHero should be render without crash 1`] = `
           <ButtonLink>
             les services
           </ButtonLink>
-        </styled.div>
-      </styled.div>
-    </styled.div>
-  </styled.div>
-</styled.div>
+        </Spaces__Margin>
+      </Grid__GridCell>
+    </Grid>
+  </Spaces__Padding>
+</Container>
 `;

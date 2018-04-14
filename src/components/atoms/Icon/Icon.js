@@ -44,7 +44,7 @@ const icons = {
   arrowRight: (theme) => (
     <g>
       <Line theme={theme} x1="0" y1="6" x2="12" y2="6" />,
-      <Polyline theme={theme} points="6 0 12 6 6 12" />,
+      <Polyline theme={theme} points="8 3 12 6 8 9" />,
     </g>
   ),
   carretDown: (theme) => <Polyline theme={theme} points="0 3 6 9 12 3" />,

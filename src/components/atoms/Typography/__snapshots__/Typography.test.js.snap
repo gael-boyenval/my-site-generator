@@ -7,6 +7,26 @@ exports[`Component Typography BadassTitle should be render without crash 1`] = `
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
+  margin: 0;
+  -webkit-transform: translateY(-0.3rem);
+  -ms-transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
+}
+
+<h1
+  className="c0"
+>
+  Hello
+</h1>
+`;
+
+exports[`Component Typography EditorialTitle should be render without crash 1`] = `
+.c0 {
+  font-size: 6rem;
+  font-family: "Gauthier FY","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
 }
 
 <h1
@@ -21,6 +41,29 @@ exports[`Component Typography LeadBodyCopy should be render without crash 1`] = 
   font-size: 2.4rem;
   font-family: "Gauthier FY","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
   line-height: 1.5;
+  margin: 0;
+  -webkit-transform: translateY(-0.2rem);
+  -ms-transform: translateY(-0.2rem);
+  transform: translateY(-0.2rem);
+}
+
+<p
+  className="c0"
+>
+  Hello
+</p>
+`;
+
+exports[`Component Typography LeadBodyCopyEditorial should be render without crash 1`] = `
+.c0 {
+  font-size: 2rem;
+  font-family: "Bw Modelica","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-transform: translateY(0.1rem);
+  -ms-transform: translateY(0.1rem);
+  transform: translateY(0.1rem);
 }
 
 <p
@@ -36,7 +79,9 @@ exports[`Component Typography Mention should be render without crash 1`] = `
   font-family: "Bw Modelica","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 500;
   line-height: 1.5;
+  margin: 0;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 <p
@@ -51,7 +96,11 @@ exports[`Component Typography SubTitle should be render without crash 1`] = `
   font-size: 3.6rem;
   font-family: "Gauthier FY","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.3333333333333333;
+  margin: 0;
+  -webkit-transform: translateY(0.1rem);
+  -ms-transform: translateY(0.1rem);
+  transform: translateY(0.1rem);
 }
 
 <h2
@@ -65,13 +114,14 @@ exports[`Component Typography TinyHeading should be render without crash 1`] = `
 .c0 {
   font-size: 1.2rem;
   font-family: "Bw Modelica","Helvetica Neue",Helvetica,Arial,sans-serif;
-  -webkit-letter-spacing: 0.1em;
-  -moz-letter-spacing: 0.1em;
-  -ms-letter-spacing: 0.1em;
-  letter-spacing: 0.1em;
+  -webkit-letter-spacing: 0.15em;
+  -moz-letter-spacing: 0.15em;
+  -ms-letter-spacing: 0.15em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
+  margin: 0;
 }
 
 <h4
@@ -85,8 +135,12 @@ exports[`Component Typography Title3 should be render without crash 1`] = `
 .c0 {
   font-size: 3rem;
   font-family: "Gauthier FY","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
-  line-height: 1.25;
+  line-height: 1.4;
   font-weight: 400;
+  margin: 0;
+  -webkit-transform: translateY(0.5rem);
+  -ms-transform: translateY(0.5rem);
+  transform: translateY(0.5rem);
 }
 
 <h3
@@ -100,8 +154,9 @@ exports[`Component Typography Title3Sans should be render without crash 1`] = `
 .c0 {
   font-size: 2rem;
   font-family: "Bw Modelica","Helvetica Neue",Helvetica,Arial,sans-serif;
-  line-height: 1.25;
+  line-height: 1.2;
   font-weight: bold;
+  margin: 0;
 }
 
 <h3

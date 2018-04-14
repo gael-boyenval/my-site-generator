@@ -19,18 +19,26 @@
   "dependencies": {
     "gatsby": "latest",
     "gatsby-link": "latest",
+    "gatsby-plugin-catch-links": "^1.0.19",
+    "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-styled-components": "latest",
     "gatsby-remark-component": "latest",
+    "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "latest",
     "gatsby-source-medium": "latest",
     "gatsby-transformer-remark": "latest",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
+    "rehype-react": "^3.0.2",
     "styled-components": "latest"
   },
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "<rootDir>/.cache/"],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/.cache/"
+    ],
     "moduleNameMapper": {
       "^Assets[/](.+)$": "<rootDir>/src/assets/$1",
       "^Styles[/](.+)$": "<rootDir>/src/styles/$1",
@@ -47,6 +55,7 @@
     "@storybook/react": "^3.2.14",
     "babel-eslint": "^8.2.2",
     "babel-loader": "7.1.1",
+    "babel-plugin-styled-components": "^1.5.1",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.3.3",

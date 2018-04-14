@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
+import Seo from 'Utils/Seo';
 import MainHero from 'Organisms/MainHero';
 import PostList from 'Organisms/PostList';
 import ProjectList from 'Organisms/ProjectList';
 
 const Index = ({ data }) => (
-  <div>
+  <Fragment>
+    <Seo postData={{}} config={data.site.siteMetadata} />
     <MainHero title={data.site.siteMetadata.title} />
     <ProjectList projects={data.projects.edges} />
     <PostList posts={data.blogPosts.edges} />
-  </div>
+  </Fragment>
 );
 
 Index.propTypes = {
@@ -25,6 +27,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        baseUrl
       }
     }
     projects: allMarkdownRemark(

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component Footer should be render without crash 1`] = `
-<styled.footer>
-  <styled.div>
-    <styled.div
+<Footer__Wrapper>
+  <Container>
+    <Spaces__Padding
       all={false}
       bottom={false}
       horizontal={false}
@@ -13,7 +13,7 @@ exports[`Component Footer should be render without crash 1`] = `
       top={false}
       vertical="wide"
     >
-      <styled.div
+      <Spaces__Margin
         all={false}
         bottom="m"
         horizontal={false}
@@ -23,11 +23,11 @@ exports[`Component Footer should be render without crash 1`] = `
         top={false}
         vertical={false}
       >
-        <styled.h2>
+        <Typography__SubTitle>
           Prenons un café
-        </styled.h2>
-      </styled.div>
-      <styled.div
+        </Typography__SubTitle>
+      </Spaces__Margin>
+      <Spaces__Margin
         all={false}
         bottom="xs"
         horizontal={false}
@@ -37,23 +37,23 @@ exports[`Component Footer should be render without crash 1`] = `
         top={false}
         vertical={false}
       >
-        <styled.a>
+        <Typography__TinyHeading>
           linkedin
-        </styled.a>
+        </Typography__TinyHeading>
          - 
-        <styled.a>
+        <Typography__TinyHeading>
           medium
-        </styled.a>
+        </Typography__TinyHeading>
          - 
-        <styled.a>
+        <Typography__TinyHeading>
           github
-        </styled.a>
+        </Typography__TinyHeading>
          - 
-        <styled.a>
+        <Typography__TinyHeading>
           twitter
-        </styled.a>
-      </styled.div>
-      <styled.div
+        </Typography__TinyHeading>
+      </Spaces__Margin>
+      <Spaces__Margin
         all={false}
         bottom="l"
         horizontal={false}
@@ -63,18 +63,18 @@ exports[`Component Footer should be render without crash 1`] = `
         top={false}
         vertical={false}
       >
-        <styled.p>
+        <Typography__BodySans>
           gaelboyenval@icloud.com 
           <br />
            06 08 14 58 40
-        </styled.p>
-      </styled.div>
-      <styled.p>
+        </Typography__BodySans>
+      </Spaces__Margin>
+      <Typography__BodySans>
         Ce site à été créé avec beaucoup d’amour, 
         <br />
         mais aussi avec Gatsby, React et est hebergé par Github
-      </styled.p>
-    </styled.div>
-  </styled.div>
-</styled.footer>
+      </Typography__BodySans>
+    </Spaces__Padding>
+  </Container>
+</Footer__Wrapper>
 `;

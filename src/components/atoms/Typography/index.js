@@ -1,6 +1,8 @@
 export {
   BadassTitle,
+  EditorialTitle,
   LeadBodyCopy,
+  LeadBodyCopyEditorial,
   TinyHeading,
   Mention,
   BodySans,

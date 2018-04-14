@@ -1,16 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component ButtonLink should be render without crash 1`] = `
-<styled.a>
-  <Icon
-    color="#62E0BB"
-    fill="none"
-    inlineBlock={true}
-    name="arrowRight"
-    size="1.2rem"
-    strokeWidth="1px"
-  />
-  <styled.div
+<Typography__TinyHeading>
+  <ButtonLink__IconWrapper>
+    <Icon
+      color="#E0E1DD"
+      fill="none"
+      inlineBlock={false}
+      name="arrowRight"
+      size="2.4rem"
+      strokeWidth="1px"
+    />
+  </ButtonLink__IconWrapper>
+  <Spaces__Margin
     all={false}
     bottom={false}
     horizontal={false}
@@ -21,6 +23,6 @@ exports[`Component ButtonLink should be render without crash 1`] = `
     vertical={false}
   >
     hello
-  </styled.div>
-</styled.a>
+  </Spaces__Margin>
+</Typography__TinyHeading>
 `;

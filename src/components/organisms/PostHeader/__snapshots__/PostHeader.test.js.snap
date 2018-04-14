@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component PostHeader should be render without crash 1`] = `
+<PostHeader__Wrapper>
+  <PostHeader__ImageWrapper />
+  <Container>
+    <Grid
+      gutter={true}
+    >
+      <Grid__GridCell
+        push={null}
+        size={0.75}
+      >
+        <PostHeader__Header>
+          <Grid
+            gutter={true}
+          >
+            <Grid__GridCell
+              push={0.1111111111111111}
+              size={0.7777777777777778}
+            >
+              <Typography__TinyHeading>
+                2018-04-09
+              </Typography__TinyHeading>
+              <Spaces__Margin
+                all={false}
+                bottom={false}
+                horizontal={false}
+                inline={false}
+                left={false}
+                right={false}
+                top={false}
+                vertical="m"
+              >
+                <Typography__EditorialTitle>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                </Typography__EditorialTitle>
+              </Spaces__Margin>
+              <Typography__LeadBodyCopyEditorial>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </Typography__LeadBodyCopyEditorial>
+            </Grid__GridCell>
+          </Grid>
+        </PostHeader__Header>
+      </Grid__GridCell>
+    </Grid>
+  </Container>
+</PostHeader__Wrapper>
+`;

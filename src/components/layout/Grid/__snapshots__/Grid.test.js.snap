@@ -16,24 +16,65 @@ exports[`Component Grid should be render grid with a cell and a gutter 1`] = `
   -webkit-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
-  margin-left: -3.6rem;
-  margin-right: -3.6rem;
+  margin-left: -2.4rem;
+  margin-right: -2.4rem;
 }
 
-.c0 > .sc-bdVaJa {
-  padding-right: 3.6rem;
-  padding-left: 3.6rem;
+.c0 > .Grid__GridCell-kOhsui {
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
 }
 
 <div
   className="c0"
 >
-  <styled.div>
+  <Grid__GridCell
+    push={null}
+  >
     col 1
-  </styled.div>
-  <styled.div>
+  </Grid__GridCell>
+  <Grid__GridCell
+    push={null}
+  >
     col 2
-  </styled.div>
+  </Grid__GridCell>
+</div>
+`;
+
+exports[`Component Grid should be render grid with a cell with 1/2push and 1/2 size 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+  margin-left: -2.4rem;
+  margin-right: -2.4rem;
+}
+
+.c0 > .Grid__GridCell-kOhsui {
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+}
+
+<div
+  className="c0"
+>
+  <Grid__GridCell
+    push={0.5}
+    size={0.5}
+  >
+    col 1 size 50%, push 50%
+  </Grid__GridCell>
 </div>
 `;
 

@@ -17,7 +17,7 @@ const MainHero = () => (
   <Container>
     <Padding vertical="wide">
       <Grid gutter>
-        <Grid.Cell width={8 / 12}>
+        <Grid.Cell size={8 / 12}>
           <Margin bottom="l">
             <BadassTitle>
               Design.<br />Code.<br />Partage.

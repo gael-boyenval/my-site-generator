@@ -11,6 +11,7 @@
     "import/resolver": {
       "configurable": {
         "Assets": "./src/assets",
+        "Utils": "./src/components/utils",
         "Styles": "./src/styles",
         "Layout": "./src/components/layout",
         "Atoms": "./src/components/atoms",

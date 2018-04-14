@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component GridViewer should be render without crash 1`] = `
+<React.Fragment>
+  <ShowGrid />
+  <GridViewer__Stripes />
+</React.Fragment>
+`;

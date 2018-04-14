@@ -25,10 +25,11 @@ const tokens = {
     m: 24,
     l: 30,
     xl: 36,
-    xxl: 64,
+    xxl: 60,
     xxxl: 72,
   },
   unit: 12,
+  gutter: 48,
   spaces: {
     none: 0,
     xxs: 4,
@@ -37,7 +38,7 @@ const tokens = {
     m: 24,
     l: 36,
     xl: 48,
-    xxl: 52,
+    xxl: 60,
     xxxl: 72,
     wide: 120,
   },
@@ -47,6 +48,7 @@ export const { colors } = tokens;
 export const { family } = tokens;
 export const { fontSizes } = tokens;
 export const { unit } = tokens;
+export const { gutter } = tokens;
 export const { spaces } = tokens;
 
 export default tokens;

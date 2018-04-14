@@ -1,13 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gaël BOYENVAL',
+    title: 'Gaël BOYENVAL, UI/UX designer et dev front freelance à Paris',
+    baseUrl: 'http://www.gaelboyenval.fr',
   },
   plugins: [
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: ['gatsby-remark-component'],
+        plugins: ['gatsby-remark-component', 'gatsby-remark-prismjs'],
       },
     },
     {
