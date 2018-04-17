@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Stripes = styled.div`
   background: linear-gradient(
@@ -20,6 +21,12 @@ const Stripes = styled.div`
   bottom: 0;
   right: 0;
   pointer-events: none;
+
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      display: none;
+    `};
 `;
 
 const Gridview = styled.div`
@@ -38,6 +45,12 @@ const Gridview = styled.div`
   flex-flow: row nowrap;
   align-items: stretch;
   margin: 0;
+
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      display: none;
+    `};
 `;
 
 const Col = styled.div`
@@ -76,8 +89,8 @@ export const ContentWrapper = styled.div`
   position: relative;
 `;
 
-const ShowGrid = () => (
-  <Gridview>
+const ShowGrid = ({ hidden }) => (
+  <Gridview hidden={hidden}>
     <Col />
     <Col />
     <Col />
@@ -93,10 +106,18 @@ const ShowGrid = () => (
   </Gridview>
 );
 
+ShowGrid.propTypes = {
+  hidden: PropTypes.bool,
+};
+
+ShowGrid.defaultProps = {
+  hidden: false,
+};
+
 const GridViewer = () => (
   <Fragment>
-    <ShowGrid />
-    <Stripes />
+    <ShowGrid hidden />
+    <Stripes hidden />
   </Fragment>
 );
 

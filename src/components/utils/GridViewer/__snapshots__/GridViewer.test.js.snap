@@ -2,7 +2,11 @@
 
 exports[`Component GridViewer should be render without crash 1`] = `
 <React.Fragment>
-  <ShowGrid />
-  <GridViewer__Stripes />
+  <ShowGrid
+    hidden={true}
+  />
+  <GridViewer__Stripes
+    hidden={true}
+  />
 </React.Fragment>
 `;
