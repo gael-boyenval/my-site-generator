@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component Footer should be render without crash 1`] = `
+exports[`Component Footer should be rendered without crash 1`] = `
 <Footer__Wrapper>
   <Container>
     <Spaces__Padding
@@ -37,19 +37,32 @@ exports[`Component Footer should be render without crash 1`] = `
         top={false}
         vertical={false}
       >
-        <Typography__TinyHeading>
-          linkedin
-        </Typography__TinyHeading>
-         - 
-        <Typography__TinyHeading>
-          medium
-        </Typography__TinyHeading>
-         - 
-        <Typography__TinyHeading>
+        <Typography__TinyHeading
+          href="https://github.com/gael-boyenval"
+          key="github"
+          target="_blank"
+        >
           github
         </Typography__TinyHeading>
-         - 
-        <Typography__TinyHeading>
+        <Typography__TinyHeading
+          href="https://www.linkedin.com/in/gaël-boyenval-5b931415/"
+          key="linkedin"
+          target="_blank"
+        >
+          linkedin
+        </Typography__TinyHeading>
+        <Typography__TinyHeading
+          href="https://medium.com/@gael_boyenval"
+          key="medium"
+          target="_blank"
+        >
+          medium
+        </Typography__TinyHeading>
+        <Typography__TinyHeading
+          href="https://twitter.com/gael_boyenval"
+          key="twitter"
+          target="_blank"
+        >
           twitter
         </Typography__TinyHeading>
       </Spaces__Margin>
@@ -64,9 +77,23 @@ exports[`Component Footer should be render without crash 1`] = `
         vertical={false}
       >
         <Typography__BodySans>
-          gaelboyenval@icloud.com 
-          <br />
-           06 08 14 58 40
+          <Spaces__Margin
+            all={false}
+            bottom="xs"
+            horizontal={false}
+            inline={false}
+            left={false}
+            right={false}
+            top={false}
+            vertical={false}
+          >
+            <Footer__EmailButton
+              onClick={[Function]}
+            >
+              Contactez-moi par e-mail
+            </Footer__EmailButton>
+          </Spaces__Margin>
+          06 08 14 58 40
         </Typography__BodySans>
       </Spaces__Margin>
       <Typography__BodySans>

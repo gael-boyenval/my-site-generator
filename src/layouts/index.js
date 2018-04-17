@@ -86,7 +86,7 @@ const Index = ({ data, children }) => (
       <ContentWrapper>
         <Header data={data} />
         <main>{children()}</main>
-        <Footer />
+        <Footer social={data.site.siteMetadata.social} />
         <GridViewer />
       </ContentWrapper>
     </Wrapper>
@@ -110,6 +110,12 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        social {
+          github
+          linkedin
+          medium
+          twitter
+        }
       }
     }
   }
